@@ -1,6 +1,7 @@
 const route = require('express').Router();
-const { register, loginUser } = require('../controller/loginSignup');
+
 const {product, singleProduct,categoryProduct,addNewProduct, companyProduct , addToCart , displayCart,closeProduct,setIncrease, setDecrease,newOrder,placeOrder} = require('../Controller/productController');
+const { signup, login } = require('../Controller/usercontroller');
 
 
 
@@ -13,8 +14,8 @@ route.get('/api/company/:company' , companyProduct)
 
 route.get('/api/createproduct' , addNewProduct)
 
-route.post('/api/register', register)
-route.post('/api/login', loginUser)
+route.post('/api/register', signup)
+route.post('/api/login', login)
 route.post('/api/cart', addToCart)
 route.post('/api/displayCart' , displayCart)
 route.post('/api/closeProduct' , closeProduct)
