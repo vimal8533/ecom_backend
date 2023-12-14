@@ -309,7 +309,8 @@ const Data = [
         }
       ],
       description: "Experience the future with the iPhone XR2. Featuring the latest A14 Bionic chip, a vibrant Liquid Retina display, and an advanced camera system, this phone delivers on performance and style.",
-      category: "Mobile"
+      category: "Mobile",
+      best:"bestseller"
     },
     {
       id: "17",
@@ -328,7 +329,8 @@ const Data = [
         }
       ],
       description: "Explore affordability without compromise with the Motorola Moto E40. Packed with essential features, a sleek design, and a reliable battery, this phone is perfect for those on a budget who still want a great mobile experience.",
-      category: "Mobile"
+      category: "Mobile",
+      best:"bestseller"
     },
     {
       id: "18",
@@ -366,7 +368,8 @@ const Data = [
         }
       ],
       description: "Step into the future with the Redmi Note 12. Featuring a powerful camera system, a large battery, and a sleek design, this phone is designed for those who seek both style and performance.",
-      category: "Mobile"
+      category: "Mobile",
+      best:"bestseller"
     },
     {
       id: "20",
@@ -480,7 +483,8 @@ const Data = [
         }
       ],
       description: "Experience reliable performance with the Dell Inspiron 15. Packed with the latest Intel Core processor and a vibrant display, this laptop is designed to handle your everyday computing needs.",
-      category: "Laptop"
+      category: "Laptop",
+      best:"bestseller"
     },
     {
       id: "26",
@@ -499,7 +503,9 @@ const Data = [
         }
       ],
       description: "Elevate your productivity with the Dell XPS 13. Featuring a sleek design, a high-resolution display, and powerful internals, this laptop is perfect for professionals and enthusiasts alike.",
-      category: "Laptop"
+      category: "Laptop",
+      best:"bestseller"
+
     },
     {
       id: "27",
