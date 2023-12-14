@@ -1,2641 +1,1258 @@
 const Data = [
+  {
+    id: "1",
+    name: "Motorola Moto G7",
+    company: "Motorola",
+    price: 799900,
+    colors: ["#ff0000", "#000000", "#CDD0D0"],
+    stock: 15,
+    stars: 4.2,
+    reviews: 10,
+    image: [
+      {
+        id: 1,
+        img: "https://tse1.mm.bing.net/th?id=OIP.Wy0WPyO5FGjNqVfcDsu9gwAAAA&pid=Api&P=0&h=180",
+        filename: "first"
+      }
+    ],
+    description: "Discover the balance of performance and affordability with the Motorola Moto G7. Equipped with a reliable processor, a sleek design, and a vibrant display, this phone is designed to meet your everyday needs without breaking the bank.",
+    category: "Mobile"
+  },
     {
-      id: "1",
-      name: "OPPO Reno10",
-      company: "oppo",
-      price: 3299900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:4,
-      stars:4.2,
-      reviews:10,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/e/4/-original-imagtcrumzbqj4xd.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/1/t/i/-original-imagrn6ds5mnccnt.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/f/r/-original-imagrn6d4jvpzfeu.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEE6xmX_h_I3hznzkTJCJceeRaJp1L7Lxskw&usqp=CAU",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Explore a range of new features on this Oppo Reno 10 5G smartphone. Capture interesting snaps with the ultra clear Portrait camera. This phone has a 64 MP main camera, 32 MP Telephoto camera, 32 MP selfie camera and a 112 degree wide-angle camera. Make a plethora of possibilities with the Telephoto portrait camera available with this phone. The Pro Portrait Mode lets you capture vivid pictures similar to that of a DSLR camera. This sleek phone weighs only about 185 g and has a 3D curved screen with 120 Hz. Powered with a 5000 mAh battery and 67 W SUPERVOOC charger",
-      category: "mobile",
-      
-      
-    },{
       id: "2",
-      name: "OPPO A17",
-      company: "oppo",
-      price: 1149900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:10,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/1/s/n/-original-imaggkzxfgweseym.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLoDvC-FtXRPQTl1uLfdf7-orjEDCTsWj46g&usqp=CAU",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHhfZ2em7-RH4Z3uDBjhMi1fVKPDOOtVmWPA&usqp=CAU",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/1/2/k/-original-imagg9u4zwegc4fe.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Choose a phone that brings out the best in you and provides smooth operation, making your difficult day seem easy. The 5000 mAh battery that powers the Oppo A17 is plenty to get you through the day with increased productivity. Additionally, the RAM Expansion technology transforms the existing ROM and provides up to 4 GB of extra RAM to support heavy programmes and reduce latency. Additionally, you can make every moment of your life glitter with the 50 MP Dual Camera system",
-      category: "mobile",
-      
-    },{
-      id: "3",
-      name: "OPPO A78",
-      company: "oppo",
-      price: 1899900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/h/x/a/-original-imagrxbufb6tqzjc.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/o/z/e/-original-imagrxbuepqfh5ze.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"data:image/jpeg;base64,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",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS46I3dba23R6RO96EXzxhwDwvwR55cc6clkQHysyVtGGx-VXRh1BuGrTGkF1FNnKk_vkM&usqp=CAU",
-          filename:"forth"
-        },
-      ],
-      description:
-        "The Oppo A78 5G smartphone brings to you a horde of innovative traits. Powered with a 33 W SUPERVOOC charger and a 5000 mAh battery capacity, you can travel anywhere without the need to worry about recharging your phone. With 8 GB expandable RAM and 128 GB of storage, experience hassle-free navigation. Built with a powerful 8 core 2.2 GHz processor, elevate your performance. The Dual Stereo Speakers, Ultra Volume Mode, 90 Hz refresh rate, FlexDrop feature, etc., are some of the salient features of this 5G smartphone",
-      category: "mobile",
-      
-    },{
-      id: "4",
-      name: "OPPO Reno8",
-      company: "oppo",
-      price: 2999900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.5,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/y/s/b/-original-imaggg5sk9zpp8hs.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/v/k/p/-original-imaggg5sbft4ghqe.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwiEhGW3KrKC319K_RBNPdUJUH5eESngFyeg&usqp=CAU",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwiEhGW3KrKC319K_RBNPdUJUH5eESngFyeg&usqp=CAU",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Discover new possibilities and enjoy the mind-blowing performance with the innovative Oppo Reno8 smartphone, which is loaded with impressive features. This phone features Dual Sony Sensors on the front and back of the phone, allowing you to create captivating images with beautiful visuals. Furthermore, the slim form of this phone, which has a thickness of 7.67 mm and weighs roughly 179 g, allows you to create a fashion statement that draws the attention of onlookers. Furthermore, you can enjoy smooth operation and an exquisite user experience owing to the fantastic MediaTek Dimensity 1300 with a magnificent 6 nm architecture.",
-      category: "mobile",
-      
-    },{
-      id: "5",
-      name: "OPPO A58 ",
-      company: "oppo",
-      price: 1499900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:3.8,
-      reviews:24,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/d/j/v/-original-imags7tyxfjhvz2h.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/4/8/a/a58-cph2577-oppo-original-imags7s6znyqejgg.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Eid7r-e36VeXAkotKjfsIUMX4ui30aF1gkSheE08rekj9YfWxSrqlCsdBtVGBgLst9U&usqp=CAU",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9GRrv1q39nvkT7CJq9-zZ095uLpQS3fvj9A&usqp=CAU",
-          filename:"forth"
-        },
-      ],
-      description:
-        "The OPPO A58 smartphone brings to you a horde of innovative traits. Powered with a 33 W SUPERVOOC charger and a 5000 mAh battery capacity, you can travel anywhere without the need to worry about recharging your phone. With 1 TB expandable storage and 128 GB of storage, experience hassle-free navigation. Built with a powerful 8 core 2 GHz processor, elevate your performance, are some of the salient features of this 5G smartphone",
-      category: "mobile",
-      
-    },{
-      id: "6",
-      name: "OPPO F21s Pro",
-      company: "oppo",
-      price: 1775000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/m/9/7/-original-imagrxbuvyjxa9vb.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/f/8/v/-original-imagrxbu6hrawzpc.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZOIzI0HEQrVC71WB2ofRKgYg4EiG9rKX_kg&usqp=CAU",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGZQ9xEpfQUCV2hiVqeHFzssbpEN4rmYoZng&usqp=CAU",
-          filename:"forth"
-        },
-      ],
-      description:
-        "With the RAM expansion possibility, you get to smoothly use your phone without any lag. Also, get an ample storage capacity and sail smoothly with a hoard of media content. You can get up to 5 GB RAM expansion which is really helpful for switching between applications steadily. With the availability of Advanced AI Portrait Bokeh, you can get the right focus and blur possibilities and take appropriate photographs that are worth creating memories.The 4500 mAh large battery backup lets you use your phone for an entire day. Take with you the 33 W SUPERVOOC charger wherever you go that charges your phone real fast. With just 5 minutes of charge, you can have 2.68 hours of calling time.",
-      category: "mobile",
-      
-    },{
-      id: "7",
-      name: "iPhone 14 Plus ",
-      company: "apple",
-      price: 6599900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.7,
-      reviews:34,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/b/0/-original-imaghx9qnhzxegu2.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/e/9/n/-original-imaghxgwrdtebvdg.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/q/b/i/-original-imaghxcptg5mdycw.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/128/128/xif0q/mobile/q/b/i/-original-imaghxcptg5mdycw.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Stay productive and improve your performance with the Super Retina XDR display that is comfortable for the eyes. Powered with a 12 MP main camera, enjoy taking pictures with friends and family. With a built-in rechargeable lithium-ion battery and equipped with the MagSafe wireless charging, you can charge your phone quickly up to 50 % in just half an hour by using a 20 W adapter. This phone is loaded with a horde of exciting features such as Siri, face ID, barometer, ambient light sensors etc., and is also resistant to dust and water as it is IP68 rated.",
-      category: "mobile",
-      
-    },{
-      id: "8",
-      name: "iPhone 14",
-      company: "apple",
-      price: 5699900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:13,
-      stars:4.5,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/e/e/-original-imaghx9q5rvcdghy.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/b/i/-original-imaghxcptg5mdycw.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/b/i/-original-imaghxcptg5mdycw.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/b/i/-original-imaghxcptg5mdycw.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Stay productive and improve your performance with the Super Retina XDR display that is comfortable for the eyes. Powered with a 12 MP main camera, enjoy taking pictures with friends and family. With a built-in rechargeable lithium-ion battery and equipped with the MagSafe wireless charging, you can charge your phone quickly up to 50 % in just half an hour by using a 20 W adapter. This phone is loaded with a horde of exciting features such as Siri, face ID, barometer, ambient light sensors etc., and is also resistant to dust and water as it is IP68 rated.",
-      category: "mobile",
-      
-    },{
-      id: "9",
-      name: "iPhone 12",
-      company: "apple",
-      price: 4299900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:13,
-      stars:4.6,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8duby8qbn4.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/3/w/o/-original-imagh2gwyhf5s3sz.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8dtbx7uhm6.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kg8avm80/mobile/r/h/z/apple-iphone-12-dummyapplefsn-original-imafwg8dtbx7uhm6.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Dive into a world of crystal-clear visuals with the Super Retina XDR Display of this Apple iPhone 12. This beast of a smartphone packs the A14 Bionic chip to make for blazing-fast performance speeds. On top of that, its Dual-camera System, along with Night Mode, helps you click amazing pictures and selfies even when the lighting isn’t as good as you’d want it to be.",
-      category: "mobile",
-      
-    },{
-      id: "10",
       name: "iPhone 13",
-      company: "apple",
-      price: 5199900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.9,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/ktketu80/mobile/s/l/c/iphone-13-mlpf3hn-a-apple-original-imag6vzz5qvejz8z.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/ktketu80/mobile/f/o/s/iphone-13-mlpf3hn-a-apple-original-imag6vzzemfy9nse.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/ktketu80/mobile/a/b/f/iphone-13-mlpf3hn-a-apple-original-imag6vzzdn9cwhs5.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/ktketu80/mobile/a/b/f/iphone-13-mlpf3hn-a-apple-original-imag6vzzdn9cwhs5.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "iPhone 13. boasts an advanced dual-camera system that allows you to click mesmerising pictures with immaculate clarity. Furthermore, the lightning-fast A15 Bionic chip allows for seamless multitasking, elevating your performance to a new dimension. A big leap in battery life, a durable design, and a bright Super Retina XDR display facilitate boosting your user experience.",
-      category: "mobile",
-      best:"bestseller"
-    },{
-      id: "11",
-      name: "iPhone 14 Pro",
-      company: "apple",
-      price: 10399900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:19,
-      stars:4.3,
-      reviews:19,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/h/r/e/-original-imaghxeeme2n7hy7.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/s/p/d/-original-imaghxemhgfzjgja.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/n/j/d/-original-imaghxemx2v9wyxa.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/z/m/l/-original-imaghxejxzzzkqr7.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Stay productive and improve your performance with the Super Retina XDR display that is comfortable for the eyes. Powered with a 12 MP main camera, enjoy taking pictures with friends and family. With a built-in rechargeable lithium-ion battery and equipped with the MagSafe wireless charging, you can charge your phone quickly up to 50 % in just half an hour by using a 20 W adapter. This phone is loaded with a horde of exciting features such as Siri, face ID, barometer, ambient light sensors etc., and is also resistant to dust and water as it is IP68 rated.",
-      category: "mobile",
-      
-    },{
-      id: "12",
-      name: "iPhone 15",
-      company: "apple",
-      price: 10990000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:13,
-      stars:4.8,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/h/d/9/-original-imagtc2qzgnnuhxh.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/y/o/-original-imagtc6fa7durcbh.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/i/h/z/-original-imagtc5fbxefnjtj.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/v/k/-original-imagtc5fx9jzazdy.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Experience the iPhone 15 – your dynamic companion. Dynamic Island ensures you stay connected, bubbling up alerts seamlessly while you're busy. Its durable design features infused glass and aerospace-grade aluminum, making it dependable and resistant to water and dust. Capture life with precision using the 48 MP Main Camera, perfect for any shot. Powered by the A16 Bionic Processor, it excels in computational photography and more, all while conserving battery life.",
-      category: "mobile",
-      featured: true,
-    },{
-      id: "13",
-      name: "OnePlus Nord CE 2",
-      company: "oneplus",
-      price: 1842800,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:23,
-      stars:4.2,
-      reviews:24,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/2/p/8/-original-imagg2a4rmk94gay.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/b/i/k/-original-imagg2a4mwqtph2z.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/b/9/h/-original-imagg2a4m7yzv6ez.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/c/i/e/-original-imagm27ghg9hz8zw.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "You can use the OnePlus Nord CE 2 Lite 5G Smartphone to get most of your work done while also staying entertained whenever needed. It is integrated with the Qualcomm Snapdragon 695 5G processor that delivers rapid and smooth performance. Also, this smartphone’s internal storage of up to 128 GB makes it easy for you to store ample data, letting you access it whenever required. Furthermore, with a battery capacity of up to 5000 mAh, it allows you to listen to music, watch movies, play games, stream, and do much more without running out of juice.",
-      category: "mobile",
-     
-    },{
-      id: "14",
-      name: "OnePlus Nord CE3",
-      company: "oneplus",
-      price: 2699900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:13,
-      stars:4.2,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/o/6/1/nord-ce3-5g-nord-ce3-5g-oneplus-original-imags44dzvsqjkw6.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/o/6/1/nord-ce3-5g-nord-ce3-5g-oneplus-original-imags44dzvsqjkw6.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/1/v/a/nord-ce3-5g-nord-ce3-5g-oneplus-original-imags44dgsgwdgvu.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/c/n/y/nord-ce3-5g-nord-ce3-5g-oneplus-original-imags44dmb9yfney.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "The phone comes with a 120 Hz refresh rate 6.70-inch touchscreen display offering a resolution of 1080x2412 pixels (FHD+) at a pixel density of 394 pixels per inch (ppi). OnePlus Nord CE 3 5G is powered by an octa-core Snapdragon 782G processor.We couldn't call Nord CE3 a true “Core Edition” phone without giving it a jaw-dropping display, and this massive 17.02cm (6.7 inches)7 120 Hz Fluid AMOLED delivers stunning views with HDR10+ color and ultra-responsive taps and swipes.",
-      category: "mobile",
-      
-    },{
-      id: "15",
-      name: "OnePlus 11R ",
-      company: "oneplus",
-      price: 4999900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:19,
-      stars:4.5,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/y/w/l/11r-5g-5011102527-oneplus-original-imagn3bq8t4ja5rx.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/8/r/a/11r-5g-5011102527-oneplus-original-imagn3bqjaczgvct.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/l/6/l/11r-5g-5011102527-oneplus-original-imagn3bqkhw2wb6q.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/f/o/z/11r-5g-5011102527-oneplus-original-imagn3bqgfz8yhss.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "OnePlus 11 5G Specs | OnePlus India Photo Mode, Video Mode, Portait Mode, Night Mode, Pro Mode, Panorama, Movie Mode, Slo-motion, Time-Lapse, Long Exposure, Dual-View Video, Tilt-Shift Mode, Xpan Mode, Auto macro, AI scene enhancement, Master Style Fliters, Retouch, AI Highlight Video, Ultra Steady Pro, Raw Plus file, Google Lens, 10bit Color, High ...",
-      category: "mobile",
-      
-    },{
-      id: "16",
-      name: "OnePlus 9 ",
-      company: "oneplus",
-      price: 3870000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4,
-      reviews:40,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/o/l/-original-imagdh2zh7hbwyxh.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/n/2/m/-original-imagadgjynrgfpyg.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/n/2/m/-original-imagadgjynrgfpyg.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/n/2/m/-original-imagadgjynrgfpyg.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens, 2 MP Monochorme Lens. Also comes with a 16 MP Front Camera Qualcomm Snapdragon 888 Processor with Adreno 660 GPU 6.55 Inches Fluid AMOLED Display with 120Hz refresh rate OnePlus Oxygen OS based on Andriod 11 Comes with 4500 mAh Battery with 65W Wired Charging Hands-Free access to Alexa: Alexa on your phone lets you make phone calls, open apps, control smart home devices, access the library of Alexa skills, and more using just your voice while on-the-go. Download the Alexa app and complete hands-free setup to get started. Just ask - and Alexa will respond instantly",
-      category: "mobile",
-      
-    },{
-      id: "17",
-      name: "OnePlus 8",
-      company: "oneplus",
-      price: 3299000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:40,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kabe9ow0/mobile/8/9/d/oneplus-8-b0756zfxwp456-original-imafrxffunruwqsh.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kfcv6vk0/mobile/w/s/c/oneplus-8-in2011-original-imafvttkn4fnnzhu.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kfcv6vk0/mobile/w/s/c/oneplus-8-in2011-original-imafvttkn4fnnzhu.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kfcv6vk0/mobile/8/9/d/oneplus-8-in2011-original-imafvttknybfqx4p.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "48MP rear camera with 4K video at 30/60 fps, 1080P video at 30/60 fps, super slow motion: 720p video at 480 fps, 1080p video at 240fps, time-lapse: 1080P 30fps, 4k 30fps, CINE aspect ratio video recording, ultrashot HDR, nightscape, micro, portrait, pro mode, panorama, cat&dog face detection&focus, AI scene detection, RAW image | 16MP front camera 16.637 centimeters (6.55-inch) 90Hz fluid display with 2400 x 1080 pixels resolution, 402 ppi pixel density Memory, Storage & SIM: 8GB RAM | 128GB internal memory | Dual SIM (nano+nano) dual-standby (5G+5G) Oxygen OS based on Android v10 operating system with 2.86GHz of clock speed with Qualcomm Snapdragon 865 powered by Kryo 585 CPU octa core processor, Adreno 650 4300mAH lithium-ion battery",
-      category: "mobile",
-     
-    },{
-      id: "18",
-      name: "OnePlus 9",
-      company: "oneplus",
-      price: 3839200,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:13,
-      stars:4.8,
-      reviews:14,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/j/n/y/-original-imagdhtmgbg6vyrd.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/o/g/y/-original-imagdhtm5fg74jd7.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/1/i/a/-original-imagdhtmxurtwqy2.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/x/k/o/-original-imagdhtm6dhbdswd.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "Rear Triple Camera Co-Developed by Hasselblad, 48 MP Main camera, 50 MP Ultra Wide Angle Camera with Free Form Lens, 2 MP Monochorme Lens. Also comes with a 16 MP Front Camera Qualcomm Snapdragon 888 Processor with Adreno 660 GPU 6.55 Inches Fluid AMOLED Display with 120Hz refresh rate OnePlus Oxygen OS based on Andriod 11 Comes with 4500 mAh Battery with 65W Wired Charging Hands-Free access to Alexa: Alexa on your phone lets you make phone calls, open apps, control smart home devices, access the library of Alexa skills, and more using just your voice while on-the-go. Download the Alexa app and complete hands-free setup to get started. Just ask - and Alexa will respond instantly",
-      category: "mobile",
-      
-    },{
-      id: "19",
-      name: "S21 FE 5G",
-      company: "samsung",
-      price: 2999900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/d/o/r/-original-imagu4haetzha9bj.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/k/z/-original-imagu4hawpcty6kj.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kzrbiq80/mobile/b/v/n/galaxy-s21-fe-5g-sm-g990ezaiinu-samsung-original-imagbpfzhzxsqhyc.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kzrbiq80/mobile/b/v/n/galaxy-s21-fe-5g-sm-g990ezaiinu-samsung-original-imagbpfzhzxsqhyc.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "With the Samsung Galaxy S21 FE, you can experience seamless gaming and mesmerising photography. This device is made to make you smile every time you unlock it. With only a little tap, you can capture amazing moments with this phone's professional-grade camera. Additionally, the 32 MP front camera on this device enables you to take amazing selfies with colourful images. Furthermore, you can make use of this phone's 16.28 cm (6.4) dynamic AMOLED 2X display to significantly improve your multimedia experience. In addition, this phone's 120 Hz Super Smooth Display helps you to play your favourite games smoothly without any stuttering.",
-      category: "mobile",
-      
-    },{
-      id: "20",
-      name: "SAMSUNG Galaxy F04",
-      company: "samsung",
-      price: 649900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/w/d/o/-original-imaghgbyhy6banxv.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/f/j/0/-original-imaghgbyp95p5gqj.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/x/f/u/-original-imaghgby4zgzhvsn.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/g/m/n/-original-imaghgbymehctzrz.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "With the stunning features of the Samsung Galaxy F04 smartphone, discover what it means to have a flawless user experience. This smartphone's astonishing 8 GB of RAM makes multitasking a snap. Additionally, the unique RAM Plus technology intelligently enhances your memory by using your storage as virtual memory, enabling you to conveniently play graphically demanding games. The MTK P35 CPU in this phone also makes it simple for you to switch between programmes and sustain productivity. On this phone's amazing 16.55cm (6.5) HD+ display, you can enjoy your favourite content with theater-like quality and experience the characters spring to life in every frame",
-      category: "mobile",
-      
-      
-    },{
-      id: "21",
-      name: "SAMSUNG Galaxy M14",
-      company: "samsung",
-      price: 1376400,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/x/x/n/galaxy-m14-5g-sm-m146b-samsung-original-imagzwssnfnzkpex.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/s/5/galaxy-m14-5g-sm-m146b-samsung-original-imagzwss5hugbggf.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/s/5/galaxy-m14-5g-sm-m146b-samsung-original-imagzwss5hugbggf.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/x/n/l/galaxy-m14-5g-sm-m146b-samsung-original-imagzwssu4znnfag.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "16.72 centimeters (6.6-inch) LCD, FHD+ resolution with 1080 x 2408 pixels resolution, 401 PPI with 16M color 50MP+2MP+2MP Triple camera setup- True 50MP (F1.8) main camera + 2MP (F2.4) + 2MP (F2.4)| 13MP (F2.0) front camera Superfast 5G with 13 5G Bands, Powerful Exynos 1330 Octa Core 2.4GH 5nm processor with Letest Android 13,One UI Core 5.0, 6000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase Get up to 2 times of Android Updates & 4 times of Security Updates with Samsung Galaxy M14 5G.",
-      category: "mobile",
-      
-    },{
-      id: "22",
-      name: "S21 FE Snapdragon 888",
-      company: "samsung",
-      price: 3299900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/4/x/0/-original-imagtnqjjfgxzpz4.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/4/x/0/-original-imagtnqjjfgxzpz4.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/4/x/0/-original-imagtnqjjfgxzpz4.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/a/z/d/-original-imagtyzzv6euf4jc.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-          "In a world where speed is king, the Samsung Galaxy S21 FE reigns supreme, offering a seamless blend of power, storage, and style that's sure to delight even the most demanding smartphone aficionados. With its lightning-fast processor, spacious storage, stunning camera capabilities, and long-lasting battery, it's a device that elevates every aspect of your mobile experience. Say hello to a world where fast doesn't just get faster; it gets phenomenal,  storage, and style that's sure to delight even the most demanding smartphone aficionados. With its lightning-fast processor, spacious storage, stunning camera capabilities, and long-lasting battery, it's a device that elevates every aspect of your mobile experience. Say hello to a world where fast doesn't just get faster; it gets phenomenal.",
-      category: "mobile",
-      
-    },{
-      id: "23",
-      name: "SAMSUNG Galaxy F14",
-      company: "samsung",
-      price: 1249000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/r/8/k/-original-imagtyxcgmgvtm7y.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/r/8/k/-original-imagtyxcgmgvtm7y.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/r/8/k/-original-imagtyxcgmgvtm7y.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/0/z/t/-original-imagtyxcg5sukgb7.jpeg?q=70",
-          filename:"forth"
-        },
-      ],
-      description:
-        "The Samsung Galaxy F14 smartphone uses a segment-only 5nm processor that enables you with easy multitasking, gaming, and much more. It has a 6000 mAh battery that will last you for up to 2 days on a single charge. Thanks to the 5G connectivity, you can enjoy high speed browsing on this smartphone. It has a large display of about 16.72 cm (6.5) full HD+ display that enables you with immersive viewing. The 12 GB of RAM with RAM Plus offers enough storage space to store all your data. This smartphone’s OS updates and security updates keeps you updated and protected.",
-      category: "mobile",
-      best:"bestseller"
-    },{
-      id: "24",
-      name: "SAMSUNG Galaxy F34",
-      company: "samsung",
-      price: 1599900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/v/r/8/-original-imagtywatxffk3yh.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/b/t/-original-imagtywahysgub6f.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/b/t/-original-imagtywahysgub6f.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/w/1/z/-original-imagtywaupct6vfc.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Sporting a host of exciting features, this Samsung F34 takes you to a whole new level. Enjoy a smooth viewing experience with FHD+ and 120 Hz AMOLED Display. This phone is suitable for low-light conditions and doesn’t harm your eyes. The phone is durable with Gorilla Glass 5 protection. Enjoy taking vivid portraits on the 50 MP No Shake camera. Use the Auto Night Mode and Fun Mode to your advantage and shoot mind-blowing videos with 4K resolution. Powered by a 6000 mAh mammoth battery, your phone can run for up to 2 days. Experience uninterrupted network and connectivity with the 11 5G bands. With Knox Security, 128 GB of storage capacity, a powerful Exynos processor, a Samsung Wallet convenient payment system, and more, this phone simply eases your tasks and improves your productivity.",
-      category: "mobile",
-     
-      
-    },{
-      id: "25",
-      name: " Chromebook Celeron",
-      company: "asus",
-      price: 1299000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:3.6,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kwnv6a80/computer/9/c/i/-original-imag9aajekwegabt.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kwnv6a80/computer/z/o/t/-original-imag9aajzgy2gzzh.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kxgfzbk0/computer/q/8/c/-original-imag9wtvmzuyhxrz.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kxgfzbk0/computer/q/a/6/-original-imag9wtvjgcmmcm6.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "You can keep up with office work or school assignments even when you're on the move with the slim and lightweight ASUS Chromebook CX1101 Laptop. Running on a Chrome Operating System, this laptop offers speedy and efficient performance to meet everyday computing demands. And, its robust build can bear accidental bumps and knocks, ensuring long-lasting performance. Moreover, integrated with an Intel dual-core processor, this laptop gives you a fast and seamless computing experience.",
-      category: "laptop",
-     
-      
-    },{
-      id: "26",
-      name: "Vivobook 15 Core i5 ",
-      company: "asus",
-      price: 3797000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/4/3/l/-original-imagdx9qetmzqjz7.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/128/128/l2m78280/computer/r/z/d/-original-imagdx9scxakr26c.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/r/e/a/-original-imagdx9qenr28djr.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/h/v/o/-original-imagdx9qzpmh4hvf.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "The outstanding Asus VivoBook 15 laptop, created to simplify your workday and improve performance, offers fantastic efficiency and stunning aesthetics. This laptop handles all of your multitasking requirements and gives you dynamic performance thanks to the Intel Core processor. Additionally, the dual-storage ASUS VivoBook 15 offers you the benefits of incredibly fast data speed and ample storage capacity. Moreover, its svelte and exquisite form makes you the centre of attention everywhere you go when donning it with you.",
-      category: "laptop",
-     
-      
-    },{
-      id: "27",
-      name: "  Vivobook 15 Core i3",
-      company: "asus",
-      price: 3099000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:3.6,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/r/e/f/-original-imagrgprbhchwgve.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kwnv6a80/computer/z/o/t/-original-imag9aajzgy2gzzh.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kxgfzbk0/computer/q/8/c/-original-imag9wtvmzuyhxrz.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kxgfzbk0/computer/q/a/6/-original-imag9wtvjgcmmcm6.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "The outstanding Asus VivoBook 15 laptop, created to simplify your workday and improve performance, offers fantastic efficiency and stunning aesthetics. This laptop handles all of your multitasking requirements and gives you dynamic performance thanks to the Intel Core processor. Additionally, the dual-storage ASUS VivoBook 15 offers you the benefits of incredibly fast data speed and ample storage capacity. Moreover, its svelte and exquisite form makes you the centre of attention everywhere you go when donning it with you.",
-      category: "laptop",
-    
-      
-    },{
-      id: "28",
-      name: " Vivobook S14 OLED ",
-      company: "asus",
-      price: 6999000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.6,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/i/h/z/-original-imagqdrxngpdcjzh.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/l2urv680/computer/4/c/g/-original-image333qyepmh85.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/l2urv680/computer/4/c/g/-original-image333qyepmh85.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/l2urv680/computer/z/s/u/-original-image333hgnww4vg.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Explore unrivaled mobility and usage as you bring home the Asus Vivobook S 14 OLED laptop. This laptop features compact and lightweight design to ensure stylish looks as well as effortless portability whenever you go out. Also, this laptop runs on a powerful Intel Core-H series processor and PCIe 4.0 SSD, that makes it easy for you to handle any challenging tasks. Also it comes with ASUS IceCool technology that helps to keep your device cool so that you can keep working on it without worrying about getting heated up.",
-      category: "laptop",
-     featured:true
-      
-    },{
-      id: "29",
-      name: " Vivobook 15 i3 12th Gen",
-      company: "asus",
-      price: 3699000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:3.6,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/r/b/s/-original-imagtucnhghtzudr.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/e/s/v/-original-imagqkqms6gsga8b.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/a/u/r/-original-imagqkqmfywmgtqb.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/q/1/q/-original-imagqkqm3g6uqa5p.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Stamp your style on the world with ASUS Vivobook 15, the feature-packed laptop that makes it easy to get things done, anywhere. For demanding workloads, the 12th Gen Intel® Core™ processor is significantly fast. With DDR4 fast memory and PCIe 3.0 speedy SSD storage, there’s plenty of power in reserve when the going gets tough. Crystal clear 39.62 cm (15.6) Full HD panel with 1920 x 1080 resolution. Perfect 16:9 aspect ratio for versatile use cases without letterboxing. Give your eyes a treat with Vivobook 15 clear, slim-bezel, immersive 82% screen-to-body ratio NanoEdge display.",
-      category: "laptop",
-     
-      
-    },{
-      id: "30",
-      name: " Vivobook Go 15",
-      company: "asus",
-      price: 3499000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:20,
-      stars:3.6,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/i/u/p/-original-imagpxgrxrqsmdqz.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/4/g/1/-original-imagnzgjctgu3cat.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/k/v/0/-original-imagnrhvg9tgeree.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/x/n/9/-original-imagnzh2jp2vm8z8.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "The incredible Vivobook Go 15 laptop, which is packed with excellent features, provides a seamless user experience and a stunning appearance. You can carry out all of your professional tasks with the AMD Ryzen 7000-U Series processor, 5500 MHz quick LDDR5, and PCIe 3.0 SSD storage included in the Vivobook Go 15 laptop. The ASUS SonicMaster and DTS Audio Processor in this laptop, which both deliver remarkably loud, high-quality sound, let you move to your favourite tunes. Its laptop's excellently engineered 180-degree lay-flat hinge enables efficient information sharing and engagement.",
-      category: "laptop",
-     
-      
-    },
-    {
-      id: "31",
-      name: " Ryzen 5 Hexa Core ",
-      company: "msi",
-      price: 4399000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.6,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/a/l/4/-original-imagtfd3dhehz6vn.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/9/j/q/-original-imagsem4mke5kyzv.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/1/e/s/-original-imagnqmwqpkwzvsa.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/w/3/i/-original-imagnqmwxdnxebmb.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "This MSI laptop features an AMD Ryzen processor so that you can maximise your productivity and creativity. It is stylish and lightweight so that you can carry it with you and stand out wherever you go. The enlarged touchpad on this laptop lets you enjoy precision touch. The WiFi 6E allows you to stream online fast. It has multiple ports so that you can connect multiple devices at the same time. This MSI laptop features AMD Ryzen processor so that you can maximise your productivity and creativity. Its sleek and stylish design makes it easy to carry and fits",
-      category: "laptop",
-    
-      
-    },{
-      id: "32",
-      name: "  Bravo 15 Ryzen 7 ",
-      company: "msi",
-      price: 5799000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/d/h/q/-original-imagrmhu8wvhykb7.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/v/u/k/bravo-15-b5ed-notebook-msi-original-imagz3ryfbxrh4gx.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/r/p/8/bravo-15-b5ed-notebook-msi-original-imagz3rywrucf6db.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/k/a/u/bravo-15-b5ed-notebook-msi-original-imagz3ry6vgtysta.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Experience the power of MD Ryzen 5000 Mobile Processor with AMD Radeon RX 6500M Graphics card for immersive gaming. You can connect instantly to the gaming world with WiFi 6E. It has a high refresh rate to provide you with smooth visuals. The thermal solutions for CPU and GPU with CoolerBoost 3 enables you with uninterrupted gaming sessions. It has a wide range of ports so that you can connect multiple devices at the same time.This MSI gaming laptop uses an AMD Ryzen 5000 Mobile Processor with AMD Radeon RX 6500M Graphics card so that you can indulge in long hours of gaming.",
-      category: "laptop",
-     
-      
-    },{
-      id: "33",
-      name: " MSI i5 13th Gen",
-      company: "msi",
-      price: 5199000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.1,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/p/m/k/modern-15-b13m-290in-thin-and-light-laptop-msi-original-imagnjyhw2dzzpaz.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/z/b/1/modern-15-b13m-290in-thin-and-light-laptop-msi-original-imagnjyhazasp2qh.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/z/b/1/modern-15-b13m-290in-thin-and-light-laptop-msi-original-imagnjyhazasp2qh.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/x/0/b/modern-15-b13m-290in-thin-and-light-laptop-msi-original-imagnjyhbunkgpmy.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "You can enjoy fast processing and enhanced productivity with the 13th Gen Intel Core processor featured in this MSI laptop. Its unique design by a French artist Lorraine Sorlet makes it stand out. It has a large touchpad to provide you with easy access. Its backlit keyboard makes it easy to view the keys in dim light. This laptop is lightweight and weighs around 1.7 kg that makes it easy to carry so that you can work from anywhere. It has a mesmerising sound system to provide you with high-quality audio. It features the MSI Center Pro for optimised performance.",
-      category: "laptop",
-     
-      
-    },{
-      id: "34",
-      name: " MSI GF63 i7 12th Gen ",
-      company: "msi",
-      price: 7999000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:12,
-      stars:3.6,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/7/0/l/-original-imagtfd2ms63gywa.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/q/n/7/thin-gf63-12ve-071in-gaming-laptop-msi-original-imagmmhgvt3rfpct.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/2/2/o/-original-imagpz9fdhez4wtt.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/a/f/t/-original-imags9wa5vbeg4wx.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "This MSI laptop is equipped with 12th Gen Intel Core i7 CPU to offer uninterrupted and unmatched performance. Its quiet operations ensures that this laptop does not get heated up even under heavy load. The 144 Hz IPS-level display offers stunning graphics and quick refresh rate to enjoy flawless gaming. You can connect several devices to this laptop to enhance its performance. You can enjoy immersive music on its Hi-Resolution Audio system.The 12th Gen Intel Core i7 CPU of this MSI laptop enhances its performance. You can easily engage in active multitasking and enjoy unmatched gaming experience.",
-      category: "laptop",
-     
-      
-    },{
-      id: "35",
-      name: "MSI GF63 i7 11th Gen  ",
-      company: "msi",
-      price: 6199000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/z/i/f/-original-imagt8bb7ruggfgm.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/1/v/q/-original-imagt8bbjgjgugst.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/e/q/h/gf63-thin-11sc-1400in-gaming-laptop-msi-original-imagz6bccbht2h6g.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/ko7idu80/computer/2/3/8/gf63-thin-10scxr-1616in-notebook-msi-original-imag2q55ymzzc6jy.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Whether you want to use it for gaming or creative assignments, the MSI GF63 Thin Laptop is sure to deliver excellent performance. Equipped with the powerful NVIDIA GeForce RTX 30 Series Laptop GPU and Ampere, NVIDIA's 2nd Gen RTX architecture, this laptop delivers true-to-life, ray-traced graphics and advanced AI features, such as NVIDIA DLSS. Moreover, the Max-Q technologies and AI also make this laptop ultra-thin and high-performance for fast operation. Besides, with this laptop's enhanced cooling and low-noise operation, you can make seamless integration into any setting.",
-      category: "laptop",
-     
-      
-    },{
-      id: "36 ",
-      name: " MSI Pulse GL66 ",
-      company: "msi",
-      price: 6999000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.6,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kr3tj0w0/computer/b/p/r/na-notebook-msi-original-imag4z5zs2xkvmwh.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kr3tj0w0/computer/o/5/g/na-notebook-msi-original-imag4z5zwzkffnfg.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kr3tj0w0/computer/p/l/q/na-notebook-msi-original-imag4z5zqpxkyhgz.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kr3tj0w0/computer/r/f/e/na-notebook-msi-original-imag4z5ztrxmuhcz.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "This MSI gaming laptop ensures that all the gamers and creators get to enjoy non-stop gaming and productivity. Its RGB lighting keyboard with Mystics Light make it a delight to use. Its dedicated thermal solutions for the CPU and GPU along with six heat pipes ensure that you can enjoy smooth gaming without worrying about the laptop heating up.",
-      category: "laptop",
-     
-      
-    },{
-      id: "37",
-      name: " Macbook Air M1 ",
-      company: "mackbook",
-      price: 8999000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.6,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/khdqnbk0/computer/f/y/t/apple-original-imafxfyqydgvrkzv.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/khdqnbk0/computer/f/y/t/apple-original-imafxfyq6x3yhzxg.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/khdqnbk0/computer/f/y/t/apple-original-imafxfyqumzyaudg.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/khdqnbk0/computer/f/y/t/apple-original-imafxfyqwa55m2fa.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "This Apple’s notebook is super slim and lightweight and can get charged quickly with the Apple M1 chip. Handle your projects at ease with the super fast 8-core CPU. Elevate your high-end games and graphics-intensive apps to the next level with its GPU of up to 8-core. Powered with a 16-core Neural Engine, accelerate your machine learning tasks with this laptop. This laptop is impressive with its fanless design and operates silently. Has a powerful battery capacity that can last up to 18 hours. Empower your day with this MacBook Air that is portable and is easy to carry around.",
-      category: "laptop",
-     
-      
-    },{
-      id: "38",
-      name: " Macbook Air M2 ",
-      company: "mackbook",
-      price: 9199000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.6,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/2/v/v/-original-imagfdeqter4sj2j.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/j/r/t/-original-imagfdeqhcbt4mfu.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/l/e/b/-original-imagfdeqsgxj6chx.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/u/8/n/-original-imagfdeqhmfry6e8.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Charged in a blazing-fast speed with the next-level M2 chip, this redesigned Apple’s notebook comes with mind blowing and has an excellent battery backup that can last up to 18 hours, which comes with an aluminium enclosure.",
-      category: "laptop",
-     
-      
-    },{
-      id: "39",
-      name: "  MacBook Pro M2 ",
-      company: "mackbook",
-      price: 10799000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/z/z/o/-original-imagfdeu9rmugapt.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/d/s/v/-original-imagfdeukyhqk9vy.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/j/m/h/-original-imagfdeuemdbrh7s.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/9/3/l/-original-imagfdeuwfzgrgam.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Charged in a blazing-fast speed with the next-level M2 chip, this redesigned Apple’s notebook comes with mind blowing and has an excellent battery backup that can last up to 18 hours, which comes with an aluminium enclosure.        ",
-      category: "laptop",
-     
-      
-    },{
-      id: "40",
-      name: "Macbook Air (2023)",
-      company: "mackbook",
-      price: 12299000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:5,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/1/s/p/macbook-air-thin-and-light-laptop-apple-original-imagqapken6qgwpk.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/3/e/6/macbook-air-thin-and-light-laptop-apple-original-imagqapkfqaebpqf.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/4/u/j/macbook-air-thin-and-light-laptop-apple-original-imagqapke2eckwtp.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/k/5/f/macbook-air-thin-and-light-laptop-apple-original-imagqapkznfgpyuf.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "This Apple’s notebook is super slim and lightweight and can get charged quickly with the Apple M1 chip. 15.3 Inch Liquid Retina display, LED-backlit display with IPS technology, 500 nits brightness, Wide colour (P3), True Tone technology. Liquid Retina display, LED-backlit display with IPS technology, 500 nits brightness, Wide colour (P3), True Tone technology. Built-in Apps: App Store, Books, Calendar, Contacts, FaceTime, Find My, Freeform, GarageBand, Home, iMovie, Keynote, Mail, Maps, Messages, Music, Notes, Numbers, Pages, Photo Booth, Photos, Podcasts, Preview, QuickTime Player, Reminders, Safari, Shortcuts, Siri, Stocks, Time Machine, TV, Voice Memos",
-      category: "laptop",
-     
-      
-    },{
-      id: "41",
-      name: "  Macbook Pro M1 Max ",
-      company: "mackbook",
-      price: 30949000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kuyf8nk0/computer/3/n/s/mk183hn-a-laptop-apple-original-imag7yzkbgbwvwq3.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kuyf8nk0/computer/a/i/v/mk183hn-a-laptop-apple-original-imag7yzke8svfgzb.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kuyf8nk0/computer/c/b/r/mk183hn-a-laptop-apple-original-imag7yzkffcd2aqs.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kuyf8nk0/computer/7/m/q/mk183hn-a-laptop-apple-original-imag7yzkuznnfkye.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Light Laptop without Optical Disk Drive. 16.2 inch Liquid Retina XDR display, Native resolution at 254 pixels per inch, Up to 1,000 nits sustained (full-screen) brightness, 1,600 nits peak brightness, 10,00,000:1 contrast ratio.High-fidelity six-speaker sound system with force-cancelling woofers, Wide stereo sound, Support for spatial audio when playing music or video with Dolby Atmos on built-in speakers",
-      category: "laptop",
-      best:"bestseller"
-      
-    },{
-      id: "42",
-      name: "MacBook Pro Core i5",
-      company: "mackbook",
-      price: 16249000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:20,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/jyq5oy80/computer/t/y/2/apple-na-thin-and-light-laptop-original-imafgwev6abfznds.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/jyq5oy80/computer/t/y/2/apple-na-thin-and-light-laptop-original-imafgwevwuzkck7s.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/jyq5oy80/computer/t/y/2/apple-na-thin-and-light-laptop-original-imafgwevxrkmpqht.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kuyf8nk0/computer/0/v/l/mk1e3hn-a-laptop-apple-original-imag7yzmsdmgfwg8.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "This Apple’s notebook is super slim and lightweight and can get charged quickly with the Apple M1 chip. Quad HD LED Backlit IPS Retina Display (True Tone Technology, Wide Color (P3), 500 nits Brightness).Built-in Apps: Keynote, Siri, Safari, FaceTime, App Store, iTunes, Time Machine, iMovie, GarageBand, Pages, Notes. Lithium Polymer Battery, Touch Bar with integrated Touch ID Sensor",
-      category: "laptop",
-     
-      
-    },{
-      id: "43",
-      name: "Ryzen 5 Hexa Core",
-      company: "hp",
-      price: 4999000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/w/h/9/-original-imagtsygc6qr9rvv.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/y/8/e/-original-imagtsygjvgcbk9z.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/h/z/0/-original-imagtsygzmnzbr5v.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/h/r/e/-original-imagtsygfrrfekhx.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "With this HP laptop, which is packed with amazing capabilities, you can find delight in beautiful graphics and easily multitask. You can feel more at home and be able to enjoy the content to its fullest thanks to the high quality and brilliant colour display. Additionally, the power of 2 million pixels allows you to see breathtaking views in real-time. Additionally, driven by the powerful AMD processor and Graphics, you can accomplish tasks in less time and work conveniently with this laptop even when you're on the go. Moreover, with a built-in 4G configuration, you can experience smooth connectivity at any moment. Whenever you need to connect, just take your HP laptop with you and use its Bluetooth and Wi-Fi capabilities.",
-      category: "laptop",
-      
-    },{
-      id: "44",
-      name: "HP 360 Intel Celeron",
-      company: "hp",
-      price: 1699000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kzogn0w0/computer/j/u/m/14a-ca0504tu-thin-and-light-laptop-hp-original-imagbmt6dsjhwwhz.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kzogn0w0/computer/v/i/a/14a-ca0504tu-thin-and-light-laptop-hp-original-imagbmt66q4uthhu.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kzogn0w0/computer/m/g/g/14a-ca0504tu-thin-and-light-laptop-hp-original-imagbmt6heyy8dmu.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kzogn0w0/computer/t/l/1/14a-ca0504tu-thin-and-light-laptop-hp-original-imagbmt6cpgp5zm4.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "With this HP laptop, which is packed with amazing capabilities, you can find delight in beautiful graphics and easily multitask. 14 Inch HD, touch, micro-edge, BrightView, (Brightness: 220 nits, 112 ppi, Color Gamut: 45% NTSC)Light Laptop without Optical Disk Drive.2 x SuperSpeed USB Type-C 5Gbps signaling rate,(USB Power Delivery, DisplayPort 1.2) 1 x SuperSpeed USB Type-A 5Gbps signaling rate.HD, touch, micro-edge, BrightView, (Brightness: 220 nits, 112 ppi, Color Gamut: 45% NTSC)",
-      category: "laptop",
-      
-    },{
-      id: "45",
-      name: "HP(2023) Intel i3 12th",
-      company: "hp",
-      price: 3799000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/d/l/q/-original-imagphhh4syr7qrg.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/u/q/j/-original-imagphhhkxpyc6fz.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/b/d/2/-original-imagphhhfe3nrhkg.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/9/t/i/-original-imagphhhqnhb2pgj.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Stay connected to what matters most with the HP 39.62 cm (15.6) laptop. Built to keep you productive and entertained from anywhere, it offers reliable performance and an expansive display, enabling you to stream, surf and speed through tasks. Stylish & Portable Thin and Light Laptop.15.6 Inch Full HD, micro-edge, anti-glare, Brightness: 250 nits, 141 ppi, Color Gamut: 45%NTSC Light Laptop without Optical Disk Drive",
-      category: "laptop",
-      
-    },{
-      id: "46",
-      name: "RHP Intel i3 12th Gen",
-      company: "hp",
-      price: 3899000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/o/l/e/-original-imagphhhan259czj.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/y/m/h/-original-imagphhhfbjrp2vj.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/e/u/m/-original-imagtun6frpn4wx4.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/u/p/9/-original-imagphhhjaaeze4u.jpeg?q=70 ",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "With this HP laptop, which is packed with amazing capabilities, you can find delight in beautiful graphics and easily multitask. The processing capacity of this laptop works in conjunction with the raw strength of the Intel processor and graphics to offer a learning environment that is adaptable and user-friendly. You can finish your tasks with this laptop's USB ports and integrated 4G LTE setup. For those who put in long hours of work day and night, this laptop provides a dependable workstation. Enjoy 1920 x 1080 resolution as well for clear visuals and images that give all of your digital content a distinct dimension. With the power of 2 million pixels, you can experience digital content in a mesmerising fashion.",
-      category: "laptop",
-      
-    },{
-      id: "47",
-      name: "Athlon Dual Core",
-      company: "hp",
-      price: 2799000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/5/6/i/-original-imaggshd5zgfe8ev.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/v/e/c/-original-imagphhhdkqvu5ng.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/z/s/a/-original-imagphhhk7jemc94.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/h/x/g/-original-imagphhhcb6qjwjs.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "With this HP laptop, which is packed with amazing capabilities, you can find delight in beautiful graphics and easily multitask. You can feel more at home and be able to enjoy the content to its fullest thanks to the high quality and brilliant colour display. Additionally, the power of 2 million pixels allows you to see breathtaking views in real-time. Additionally, driven by the powerful AMD processor and Graphics, you can accomplish tasks in less time and work conveniently with this laptop even when you're on the go. Moreover, with a built-in 4G configuration, you can experience smooth connectivity at any moment. Whenever you need to connect, just take your HP laptop with you and use its Bluetooth and Wi-Fi capabilities.",
-      category: "laptop",
-      best:"bestseller"
-      
-    },{
-      id: "48",
-      name: "HP Ryzen 3 Dual Core",
-      company: "hp",
-      price: 2699000,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:5,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/z/e/i/255-g8-laptop-hp-original-imagrfr3trshn7eg.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/a/5/c/255-g8-laptop-hp-original-imagrfr3yvjdrday.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/f/a/0/255-g8-laptop-hp-original-imagrfr36zhyxge2.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/computer/y/f/0/255-g8-laptop-hp-original-imagrfr3axkpbegb.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "With this HP laptop, which is packed with amazing capabilities, you can find delight in beautiful graphics and easily multitask. You can feel more at home and be able to enjoy the content to its fullest thanks to the high quality and brilliant colour display. Additionally, the power of 2 million pixels allows you to see breathtaking views in real-time. Additionally, driven by the powerful AMD processor and Graphics, you can accomplish tasks in less time and work conveniently with this laptop even when you're on the go. Moreover, with a built-in 4G configuration, you can experience smooth connectivity at any moment. Whenever you need to connect, just take your HP laptop with you and use its Bluetooth and Wi-Fi capabilities.",
-      category: "laptop",
-     
-    },{
-      id: "49",
-      name: "Luigi Analog Watch",
-      company: "watch",
-      price: 782900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:5,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/c/y/h/-original-imagpm2k2rj7eezb.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/x/d/c/-original-imags4f3wefzmwjn.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/832/832/kwmfqfk0/watch/4/0/p/1-ar1918-emporio-armani-men-original-imag998hhqhgjwtf.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/832/832/kwmfqfk0/watch/u/y/8/1-ar1918-emporio-armani-men-original-imag998hzvchgqxe.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Multifunction: Quartz movement typically built into three separate sub-eyes for the day of the week, date of the month and 24-hour time. Chronograph: A multifunction watch with stopwatch functionality.This is one watch which you will make sure you look at it more than once. With a matte black top ring, the skeleton dialed piece of beauty comes ...",
-      category: "accessories",
-      
-     
-    },{
-      id: "50",
-      name: "Edifice ( EFR-S567DC-1AVUDF ) ",
-      company: "watch",
-      price: 1394400,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/w/z/b/-original-imagqjes8fv5hhzy.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/m/a/k/-original-imagsffrghdxv8xe.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/832/832/k0zlsi80/watch/6/f/h/ex508-casio-original-imafkmydhd2ubd7g.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/832/832/k0zlsi80/watch/6/f/h/ex508-casio-original-imafkmyjxa2rhggk.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "This is a genuine Casio product. The product comes with a standard manufacturer warranty of 2 Years.EDIFICE watches have a flat case bezel attached to a solid stainless steel band. The ultra-thin and slim case of this watch is tough, durable and elegant to give you a classic sports feel.The slim chronograph for EDIFICE watches are modelled with a 1/1000-second stopwatch that offers a +/- 20 seconds per month chronometric precision. It is modelled with a 3-dial analog that can display elapsed and split time to measure up to 30 minutes. ",
-      category: "accessories",
-      
-     
-    },{
-      id: "51",
-      name: "Edifice ( EFR-539L-5AVUDF ) ",
-      company: "watch",
-      price: 1049400,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:3.9,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/i/w/p/-original-imagpm2kv3ha4drk.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/q/o/p/-original-imagsffsqmp8naaq.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/832/832/jx9aefk0/watch-refurbished/t/y/u/a-ex194-casio-original-imafhrgtkpghwkay.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/832/832/xif0q/watch/x/8/l/-original-imagtgzdvka4gg7w.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "The brown round dial is protected by a mineral glass. The leather strap comes in a brown hue that further elevates the look of the timekeeper. Besides, it is completed with a buckle clasp to ensure a secure fit on the wrist.Lending a contemporary twist to an elegant design, this men's analog watch from Casio Edifice is a must-have wrist essential.",
-      category: "accessories",
-      
-     
-    },{
-      id: "52",
-      name: "SAMSUNG Watch 4",
-      company: "watch",
+      company: "Apple",
       price: 1099900,
       colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:30,
-      image:[
+  
+      stock: 15,
+      stars: 4.8,
+      reviews: 20,
+      image: [
         {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/ksxjs7k0/smartwatch/o/q/t/android-sm-r890nzkainu-samsung-yes-original-imag6dtg5m6rztx6.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kst9gnk0/smartwatch/s/i/m/1-2-android-sm-r880nzkainu-samsung-yes-original-imag6awytxf6nabn.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kst9gnk0/smartwatch/d/p/t/1-2-android-sm-r880nzkainu-samsung-yes-original-imag6awyu9emyzdj.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kst9gnk0/smartwatch/q/a/g/1-2-android-sm-r880nzkainu-samsung-yes-original-imag6awyzjghzqkt.jpeg?q=70",
-          filename:"forth"
-        },
-
+          id: 1,
+          img: "https://tse3.mm.bing.net/th?id=OIP.Pq8j7NQNakncXZz9-4ijTAHaKX&pid=Api&P=0&h=180",
+          filename: "first"
+        }
       ],
-      description:
-        "Bioelectrical Impedance Analysis Sensor for Body Composition Analysis, Optical Heart Rate Sensor.Health Monitoring features such as Advanced Sleep Analysis & Women's Health.Only compatible with Android Smartphones (Runs on Wear OS Powered by Samsung)Enhanced Fitness tracking lets you track 90+ workouts; Enriched App availability and connectivity with Wear OS, Powered by Samsung. Typical Usage Time (Hours): up to 40 Hours.",
-      category: "accessories",
-      featured:true
-     
-    },{
-      id: "53",
-      name: "Fastrack Revoltt FS1 ",
-      company: "watch",
-      price: 209900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/i/2/2/-original-imagzvhswuuzay6x.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/d/u/k/-original-imagzzukgevbkh9w.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/h/d/r/-original-imagzzukzxyyxmnf.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/k/e/k/-original-imagzzukd5xksz9d.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "World's First 1.96 Super AMOLED Arched Display with Always On Display* Enjoy the Highest 410 x 502 Pixel Resolution for a Sharper ExperienceSingleSync BT Calling | Favourite Contacts (Android - 100, iOS - 50) | Quick Replies (Android)NitroFast Charging with 10 min Charge = 1 Day Battery | Up to 7 Days of Battery LifeAdvanced 110+ Sports Modes | 200+ Watchfaces | In-Built Games | AI Voice Assistant | Weather",
-      category: "accessories",
-      best:"bestseller"
-     
-    },{
-      id: "54",
-      name: "Noise Evolve 3 1.43",
-      company: "watch",
-      price: 219900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/q/4/2/-original-imaggstrsxtwxzar.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/l/0/6/-original-imaggaqtcxywjevg.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/z/g/s/-original-imaggaqtqbuffqq2.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/x/p/q/-original-imaggaqttyxuepev.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "1.43 AMOLED Always On Display (466*466px | 326 PPI | 500 nits brightness) Tru SyncTM Lightweight design with circular stainless steel ring Noise Health SuiteTM (SpO2, stress monitor, 24*7 heart rate tracking, sleep monitor & breath)",
-      category: "accessories",
-      best:"bestseller"
-     
-    },
-
-    {
-      id: "55",
-      name: "realme Buds Air 5 ",
-      company: "buds",
-      price: 299900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/1/x/j/-original-imagsgfbgrfhy7vm.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/b/e/n/-original-imagsgfbhsfrsn4f.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/w/i/f/-original-imagsgfbq8hgf4fp.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/b/l/4/-original-imagsgfbgpt5xhhq.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Experience the bliss of soothing audio with these top-notch 50 dB ANC earbuds. Equipped with a 12.4 mm Mega Titanising Driver, this earplug delivers full bass and brings out clear vocals. Combined with six microphone designs and AI algorithms, you get a remarkable sound pick up system that minimises the surrounding noise during calls. Get 7 hours of music time with just 10 minutes of charging and keep listening to your favourite music on the go. Loaded with interesting features like Dynamic Bass Boost capabilities, Dolby Atmos support, IPX5 water resistance and 45 ms Super Low Latency for quick responsiveness, this device will serve to be an amazing earbuds.",
-      category: "accessories",
-      featured:true
-      
-      
-     
-    }, {
-      id: "56",
-      name: "Google Pixel Buds ",
-      company: "buds",
-      price: 399900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/krjjde80/headphone/a/t/9/pixel-buds-a-series-google-original-imag5b9dzmpnzhyd.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/krjjde80/headphone/a/v/r/pixel-buds-a-series-google-original-imag5b9dfczq6ad7.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/ksdjma80/headphone/i/m/m/pixel-buds-a-series-google-original-imag5yh4rxrwngz6.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/ksdjma80/headphone/s/4/x/pixel-buds-a-series-google-original-imag5yh4w7fwkzhy.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "12mm dynamic driver | Dual beamforming microphones Just say Ok Google for help and get real-time translations | 5 hours playtime on earbud | 24 hour total playtime Pairs with your Pixel or any Android device, iOS or any other Bluetooth 4.0+ device. Sweat and Water resistant | IPX4 rated | Adaptive Sound and Clear calls in loud places Passive noise reduction | Spatial vent for in-ear pressure reduction and spatial awareness",
-      category: "accessories",
-      best:"bestseller"
-      
-     
-    }, {
-      id: "57",
-      name: "OnePlus Nord Buds 2  ",
-      company: "buds",
-      price: 299900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.3,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/0/v/m/nord-buds-2-oneplus-original-imagnwf7sgjetqwg.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/a/r/v/-original-imagzkaz3eexazkq.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/q/v/t/-original-imagzkazpnse4jcg.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/z/4/x/-original-imagzkaz9kyf4ugg.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "The OnePlus Nord Buds 2 will be music to your ears with big 12.4 mm dynamic drivers for deeper bass & crisp clear sound.For the OnePlus Nord Buds 2, you get to choose how heavy or light you want your sound with the help of sound master equalizer's 3 unique audio profiles -Balance, Vocal & Transparent.The flagship-level battery life for the all-new OnePlus Nord Buds 2 delivers up to 36 hrs of non-stop music on a single charge.BassWave bass enhancement algorithm endows deep and broad bass to earbuds with fidelity. This algorithm offsets the low-frequency responses dynamically.Enjoy Ultra-Fast Charing in the latest OnePlus Nord Buds 2. From 10mins of charging you get power of 5 hours.OnePlus Fast pairing is supported on OnePlus smartphones with a system version of Oxygen OS 11.0. IP55 Water & Sweat Resistance.",
-      category: "accessories",
-      
-      
-     
-    }, {
-      id: "58",
-      name: "realme Techlife Buds T100",
-      company: "buds",
-      price: 129900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/j/t/c/-original-imaghbdup9jbrdzh.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/9/r/w/-original-imaghbduvtpxmcnz.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/f/p/1/-original-imaghbdugp3gymep.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/a/1/o/-original-imaghbdu6gtehnf6.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "If truly wireless is your vibe, the realme TechLife Buds T100 are sure to be your new best buds! The 10mm dynamic bass driver and Dirac technology ensures an immersive sound experience across all genres. With 28 hours total playback, you can keep your buds going for the long haul. You can even take crystal clear calls thanks to its AI ENC technology. The realme TechLife Buds T100 also have low latency of 88 ms and Bluetooth 5.3 compatibility, and many more amazing features, making them perfect for any activity.",
-      category: "accessories",
-      
-      
-     
-    }, {
-      id: "59",
-      name: "realme Buds Wireless 3 ",
-      company: "buds",
-      price: 169900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/t/4/p/-original-imagrddw8rpjwfag.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/s/q/u/-original-imagrddwyvyfscsc.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/o/d/z/-original-imagrddwzv9ah85m.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/headphone/u/t/q/-original-imagrddwbgyeu9ng.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "You can listen to your favourite tracks, play games, and attend calls in exceptional quality audio with the realme Buds Wireless 3 Neckband. With its ability to provide up to a 360-degree spatial audio effect, this neckband offers a captivating and immersive sound experience reminiscent of being in a theatre, where the sound envelops you from all directions. This feature creates a life-like and three-dimensional audio environment that boosts your senses. Additionally, sporting sophisticated Active Noise Cancellation (ANC) technology, this neckband allows you to indulge in a personalised auditory experience.",
-      category: "accessories",
-      
-      
-     
-    }, {
-      id: "60",
-      name: "realme Buds 2 Neo ",
-      company: "buds",
-      price: 119900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/ksqeky80/headphone/3/l/n/rma2011-realme-original-imag68fqfqbydmrx.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/ksyz8280/headphone/n/l/3/rma2011-realme-original-imag6f5f4vha2jgg.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/ksyz8280/headphone/n/x/d/rma2011-realme-original-imag6f5f9prrarxm.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/ksyz8280/headphone/4/s/k/rma2011-realme-original-imag6f5fdbfgkktu.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "A large driver for deeper, richer and more dynamic bass to offer you an immersive surround sound experience. With this massive built-in battery be immersed in your favourite music. realme Wireless 2 Neo also supports fast charging – Just 10min Charge gives 120min non-stop music.",
-      category: "accessories",
-      
-      
-     
-    },{
-      id: "61",
-      name: "alis E88 DRONE Drone ",
-      company: "camera",
-      price: 559900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.6,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/drone/0/p/m/50-40-1-e88-drone-nikhilx-original-imagqre6nm9rugdj.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/drone/b/k/c/80-20-0-e88-drone-wifi-camera-drone-remote-control-quadcopter-original-imagqgvynqxvxvyk.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/drone/g/e/c/50-40-1-e88-drone-nikhilx-original-imagqre6mmzgnz7e.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/drone/7/p/f/50-300-1-2-sde4w-nactus-original-imagrsarr9trajaw.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Frequency: 2.4G Channel: 4CH Motor: 816 Coreless Motor Quadcopter Battery: 3.7V 1800mAh Lipo (Included) Transmitter Battery: 3x 1.5 AA Battery Flying time: 10-30 mins(Approx) Charging time: 100mins R/C Distance: 100m Color: Black Dual Camera: 1080P / 4K Quad's Size: 25*20*5.5 CM (the arms not folded) 12.5*8*5.5 CM (the arms folded) Function: Up/down, Forward/backward, Turn left/right, Sideward flight, 3-level flight speed, LED Light, Headless Mode, One Key Automatic Return, Altitude Hold Mode, WiFi FPV, Trajectory Flight, Feature: -Trajectory Flight. Draw a flight way on the screen, and the drone would conduct an autonomous flight along the designated way. -2.4GHz Technology Adopted for Anti-Interference. -4 Channel which can ascend, descend, forward, backward, left sideward fly, right sideward fly, and rolling 360°. -6-axis gyro which can have more stable flying and be easy to control. ",
-      category: "accessories",
-      featured:true
-      
-      
-      
-     
-    },{
-      id: "62",
-      name: " EOS 3000D DSLR ",
-      company: "camera",
-      price: 2899900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5h9yuyc5zu.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/jfbfde80/camera/n/r/n/canon-eos-eos-3000d-dslr-original-imaf3t5hmepevckd.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/jfbfde80/camera/n/r/n/canon-eos-3000d-original-imaf3t5hjrz6zzzc.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/jmthle80-1/dslr-camera/n/r/n/eos-eos-3000d-canon-original-imaf9n6fqhmgt4cv.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "If you are a photography enthusiast, then the Canon EOS 3000D DSLR Camera is a must-have gadget. Featuring an 18 MP (APS-C) CMOS sensor and the DIGIC 4+ imaging processor, you can capture amazing photos of your subject at all times, even in low-light conditions. Moreover, the remote Live View function lets you control this camera remotely using your smartphone so you can capture amazing photos even from a distance ",
-      category: "accessories",
-      best:"bestseller"
-      
-      
-     
-    },{
-      id: "63",
-      name: "SJCAM SJ 4000",
-      company: "camera",
-      price: 399900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:3.7,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/koudfgw0/sports-action-camera/k/l/3/4000-air-4k-full-hd-wifi-30m-waterproof-sports-action-camera-original-imag37azyptu4zak.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kdhphu80/sports-action-camera/j/f/k/4000-air-4k-full-hd-wifi-30m-waterproof-sports-action-camera-original-imafue3ghmhtk39f.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kdhphu80/sports-action-camera/j/f/k/4000-air-4k-full-hd-wifi-30m-waterproof-sports-action-camera-original-imafue3gb7hgzbje.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kdhphu80/sports-action-camera/j/f/k/4000-air-4k-full-hd-wifi-30m-waterproof-sports-action-camera-original-imafue3gmzbycgck.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "SJ4000 Air 2.0 LCD Screen FHD Display - Clearly see your operation ,easy setting to replay the footage you are shooting just by your action camera, convenient your operation, Durable and 30 Meter Waterproof- The camera is designed to withstand any extreme situation with the waterproof camera housing,whether your are skiing, diving, snorkeling, climbing or gliding, Ultra HD 4k Waterproof Video Camera- 4K@30FPS/2K@30FPS Videos, 16MP high definition photo by 170 degree adjustable wide-angel, Wireless Control Wifi Action Camera - Built-in wifi, transfer your action in minutes to your mobile device, edit and share your wonderful moments instantly",
-      category: "accessories",
-      
-      
-      
-     
-    },{
-      id: "64",
-      name: "Insta360 One X2 ",
-      company: "camera",
-      price: 3298900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kll7bm80/sports-action-camera/w/y/2/one-x2-one-cinosxx-a-insta360-original-imagyzbbyhcw8hh5.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kll7bm80/sports-action-camera/c/c/w/one-x2-one-cinosxx-a-insta360-original-imagyzbbu6mtgavt.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/sports-action-camera/l/i/b/-original-imaghae8ykvrcvva.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/sports-action-camera/e/u/i/-original-imaghae8ax8kcgsn.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "360 5.7K VIDEO + 2.7K STEADY CAM: The Insta360 ONE X2 is latest 360 camera packed with a multitude of new features. Based off the popular ONE X form factor, the new ONE X2 is outfitted with Super 5.7K 360 video resolution & H.PREMIUM 4-MIC 360 AUDIO: The ONE X2 is truly vlog-ready, featuring a 4-mic stereo processing with integrated wind noise reduction - the best quality audio from Insta360 yet. In addition the ONE X2 is also compatible with any external microphone using a 3.5mm mic input (requires USB-C to 3.5mm adapter sold separate) and can be paired with the ever popular Apple AirPods for a wireless audio input",
-      category: "accessories",
-      
-      
-      
-     
-    },{
-      id: "65",
-      name: "SONY Alpha ILCE-6100L",
-      company: "camera",
-      price: 6698900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.6,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/k3q76a80/camera/a/9/y/sony-apsc-ilce-6100l-b-in5-mirrorless-original-imafm6msv5uzrmgt.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/k3q76a80/camera/a/9/y/sony-apsc-ilce-6100l-b-in5-mirrorless-original-imafmsk5whjgfsjm.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/k3q76a80/camera/a/9/y/sony-apsc-ilce-6100l-b-in5-mirrorless-original-imafmsk5khhdfmeb.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/k3q76a80/camera/a/9/y/sony-apsc-ilce-6100l-b-in5-mirrorless-original-imafmsk5pv5jbj7n.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Featuring a 24.2-megapixel Exmor CMOS image sensor and the BIONZ X image processor, this mirrorless camera from Sony offers low-noise performance to ensure that your images are crystal clear. It also takes advantage of the AF Tracking Technology, so you can even click pictures of moving objects without any hassle.",
-      category: "accessories",
-      
-      
-      
-     
-    },{
-      id: "66",
-      name: "NIKON Z 50 ",
-      company: "camera",
-      price: 8798900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/k5o7r0w0/dslr-camera/m/3/2/z-50-z-50-nikon-original-imafzasj4nxzcxgn.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/k5o7r0w0/dslr-camera/m/3/2/z-50-z-50-nikon-original-imafzasjv4ysjeg2.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/k5o7r0w0/dslr-camera/m/3/2/z-50-z-50-nikon-original-imafzasjdhpzm2zn.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/k5o7r0w0/dslr-camera/z/h/4/z-50-z-50-nikon-original-imafzasjnybyete3.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Small but mighty, simple but powerful�a Z series camera for creating amazing online stories. Professional looking stills, 4K Ultra HD videos, slow motion, time-lapse and more. Wi-Fi� and Bluetooth enabled, plus in-camera video editing. Beautifully designed with a comfortable grip, flip-down touchscreen LCD, smart button layout, extended Electronic Viewfinder and travel-proof ruggedness.,suitable_for-Enthusiast,-,sensor_type-APS-C size/DX-format,Edit videos on the fly (Shoot a clip, trim it right in the camera, send it to your phone and post it without missing a beat.), Like two cameras in one.(The Z 50 lets you separately save the most appropriate settings for each shooting mode and then change smoothly between them with the flick of a lever.), Turn an ordinary moment into an epic 120 FPS slow motion 1080p Full HD video, great for bending time, speed ramping, Quick and nimble., Shoot remotely, Eye catching in so many ways., Extra-creative filters & effects., High-end feel, Great content deserves a great-looking live stream.",
-      category: "accessories", 
-     
+      description: "Experience the power of the A15 Bionic chip and the stunning Super Retina XDR display with the iPhone 13. Capture beautiful moments with the advanced dual-camera system, and enjoy all-day battery life. The sleek design and iOS ecosystem make it a perfect companion for your daily life.",
+      category: "Mobile"
     },
     {
-      id: "67",
-      name: "Mivi Fort S180  ",
-      company: "speaker",
-      price: 499900,
+      id: "3",
+      name: "Motorola Edge 20",
+      company: "Motorola",
+      price: 1249900,
       colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.2,
-      reviews:30,
-      image:[
+  
+      stock: 12,
+      stars: 4.5,
+      reviews: 15,
+      image: [
         {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/w/x/v/-original-imagtajvnpfwczkp.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/y/1/d/-original-imagtajvyrzbhbrh.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/c/w/b/-original-imagtajvjcmmmhtz.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/l/e/f/-original-imagtajvdaqz29gy.jpeg?q=70",
-          filename:"forth"
-        },
-
+          id: 1,
+          img: "https://rukminim2.flixcart.com/image/850/1000/ksez24w0/mobile/j/d/k/edge-20-par00010in-motorola-original-imag5yv7rddhzmbz.jpeg?q=90",
+          filename: "first"
+        }
       ],
-      description:
-        "Feel the depth of sound in 180 watts of immersive cinematic surround sound with the Fort S180 Soundbar. Delve deep into the world of audio delight with your personal home theatre 2.1 channel with Bluetooth & bass. With 2 in-built full-range speakers and 1 external sub-woofer, bridge the gap between theatre and home with a soundbar that resonates with unparalleled intensity. The soundbar speakers are crafted to add substance to your space. The iconic design with its wall-mounted feature and true rich tones helps this sound system for home to blend with your space seamlessly. The soundbar allows you to adapt effortlessly to your choice of entertainment via 'Multiple EQ Modes' by simply tapping on your Mivi remote",
-      category: "accessories", 
-      
-      
-     
-    },{
-      id: "68",
-      name: "JBL Flip Essential 2 ",
-      company: "speaker",
-      price: 499900,
+      description: "Explore the edge with the Motorola Edge 20. Featuring a powerful Snapdragon processor, a high-refresh-rate display, and a versatile triple-camera system, this phone is designed for those who demand performance and style. Get ready to elevate your smartphone experience.",
+      category: "Mobile"
+    },
+    {
+      id: "4",
+      name: "Realme GT Neo",
+      company: "Realme",
+      price: 899900,
       colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
+  
+      stock: 18,
+      stars: 4.6,
+      reviews: 25,
+      image: [
         {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/mobile-tablet-speaker/p/p/3/jblflipes2-jbl-original-imaghhxczcphv48d.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/t/x/f/-original-imagngzbkqbhdren.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/3/c/y/-original-imagngzb3d8xexqv.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/k/y/k/-original-imagngzbfn3dghry.jpeg?q=70",
-          filename:"forth"
-        },
-
+          id: 1,
+          img: "https://image01.realme.net/general/20220426/1650965329989.png.webp",
+          filename: "first"
+        }
       ],
-      description:
-        "Flip Essential 2's racetrack-shaped driver delivers room-filling JBL Original Pro Sound and surprisingly deep bass for a compact package. Don't sweat the small stuff like charging your battery. Flip Essential 2 gives you up to 10 hours of playtime. Keep the music going longer and louder with powerful JBL Original Pro Sound.",
-      category: "accessories",
-      
-     
-    },{
-      id: "69",
-      name: "ZEBRONICS ZEB-Juke Bar",
-      company: "speaker",
+      description: "Unleash the power of speed with the Realme GT Neo. Packed with a MediaTek Dimensity processor, a vibrant Super AMOLED display, and a fast-charging battery, this phone is perfect for gamers and multitaskers. Elevate your mobile experience with Realme.",
+      category: "Mobile"
+    },
+    {
+      id: "5",
+      name: "Redmi Note 10 Pro",
+      company: "Redmi",
+      price: 1099900,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+  
+      stock: 20,
+      stars: 4.4,
+      reviews: 22,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim2.flixcart.com/image/850/1000/l0h1g280/mobile/4/l/a/-original-imagc9cqcvzssx7a.jpeg?q=90",
+          filename: "first"
+        }
+      ],
+      description: "Get ready for a pro-level experience with the Redmi Note 10 Pro. Featuring a high-resolution camera setup, a powerful Snapdragon processor, and a stunning 120Hz display, this phone delivers on performance and style. Redefine your smartphone experience with Redmi.",
+      category: "Mobile"
+    },
+    {
+      id: "6",
+      name: "iPhone SE (2023)",
+      company: "Apple",
+      price: 799900,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+  
+      stars: 4.7,
+      reviews: 18,
+      image: [
+        {
+          id: 1,
+          img: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-se-finish-select-202207-starlight?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1655316263356",
+          filename: "first"
+        }
+      ],
+      description: "Experience the compact power of the iPhone SE (2023). With the latest A14 Bionic chip, advanced camera system, and iOS features, this phone delivers flagship performance in a pocket-friendly size. Stay connected and capture memories with ease.",
+      category: "Mobile"
+    },
+    {
+      id: "7",
+      name: "Realme Narzo 50A",
+      company: "Realme",
       price: 999900,
       colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
+  
+      stock: 16,
+      stars: 4.3,
+      reviews: 14,
+      image: [
         {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/kmz7qfk0/speaker/soundbar/n/z/r/zeb-juke-bar-9400-pro-dolby-5-1-zeb-juke-bar-9400-pro-dolby-original-imagfrd3gwavhvpn.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kmz7qfk0/speaker/soundbar/y/i/w/zeb-juke-bar-9400-pro-dolby-5-1-zeb-juke-bar-9400-pro-dolby-original-imagfrd3dsmqfamz.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kmz7qfk0/speaker/soundbar/e/c/k/zeb-juke-bar-9400-pro-dolby-5-1-zeb-juke-bar-9400-pro-dolby-original-imagfrd3u9g6bjwd.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kmz7qfk0/speaker/soundbar/i/6/d/zeb-juke-bar-9400-pro-dolby-5-1-zeb-juke-bar-9400-pro-dolby-original-imagfrd34kdjjeg6.jpeg?q=70",
-          filename:"forth"
-        },
-
+          id: 1,
+          img: "https://www.jiomart.com/images/product/original/493178791/realme-narzo-50a-128-gb-4-gb-ram-oxygen-blue-mobile-phone-digital-o493178791-p594779615-0-202210221327.jpeg?im=Resize=(420,420)",
+          filename: "first"
+        }
       ],
-      description:
-        "This Zebronics soundbar, along with its rear speakers and subwoofer, delivers good-quality sound. It comes with Dolby Digital Plus, so rest assured you can enjoy immersive surround sound. You can also connect this sound system with other devices via Bluetooth, USB, etc. What's more, the soundbar can also be mounted on the wall of your room.This soundbar comes with an efficient 16.5 cm (6.5) subwoofer. Also, the total delivered RMS output is 525 W. Hence, you can enjoy cinematic sound and deep bass. Also, its versatility is enhanced, as it features several connectivity options.",
-      category: "accessories",
-      best:"bestseller"
-     
-    },{
-      id: "70",
-      name: "JBL Partybox 110  ",
-      company: "speaker",
-      price: 2599900,
+      description: "Empower your daily life with the Realme Narzo 50A. Featuring a large battery, a triple-camera setup, and a sleek design, this phone offers a perfect blend of style and performance. Enjoy the Realme experience at an affordable price.",
+      category: "Mobile"
+    },
+  
+    {
+      id: "8",
+      name: "iPhone 14",
+      company: "Apple",
+      price: 1199900,
       colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.5,
-      reviews:30,
-      image:[
+  
+      stock: 18,
+      stars: 4.9,
+      reviews: 30,
+      image: [
         {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/w/s/j/-original-imagj2jvdnfywpad.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/h/p/z/-original-imagj2jvafzmu3fh.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/y/3/s/-original-imagj2jvkeqma4ge.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/xif0q/speaker/w/1/z/-original-imagj2jvughmehqp.jpeg?q=70",
-          filename:"forth"
-        },
-
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61b7Ew7kjYL._AC_UF1000,1000_QL80_.jpg",
+          filename: "first"
+        }
       ],
-      description:
-        "Wireless music streaming via Bluetooth. The PartyBox 110 comes with an Built-in Rechargeable battery that lets you play all night for an incredible 12 hours. The JBL PartyBox 110 is IPX4 splashproof so you never have to worry about the party getting too wet and wild With Colors synched to the Beat and with Customizable Strobes and Patterns that dazzle your eyes, party with an unique, immersive Audiovisual experience",
-      category: "accessories",
-      featured:true
-      
-    },{
-      id: "71",
-      name: "boAt Stone 1200F",
-      company: "speaker",
+      description: "Immerse yourself in the future with the iPhone 14. Featuring the latest A16 Bionic chip, a revolutionary camera system, and a stunning ProMotion display, this phone sets the standard for innovation and performance. Elevate your mobile experience with Apple.",
+      category: "Mobile"
+    },
+    {
+      id: "9",
+      name: "Motorola G Pure",
+      company: "Motorola",
+      price: 899900,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+  
+      stock: 22,
+      stars: 4.3,
+      reviews: 25,
+      image: [
+        {
+          id: 1,
+          img: "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g-pure.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Experience pure simplicity with the Motorola G Pure. This budget-friendly phone combines a sleek design with essential features, offering a reliable and affordable mobile experience. Stay connected and enjoy the essentials with Motorola.",
+      category: "Mobile"
+    },
+    {
+      id: "10",
+      name: "Realme 9 Pro+",
+      company: "Realme",
+      price: 1099900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 20,
+      stars: 4.5,
+      reviews: 28,
+      image: [
+        {
+          id: 1,
+          img: "https://fdn2.gsmarena.com/vv/pics/realme/realme-9-pro-plus-1.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Unleash the power of photography with the Realme 9 Pro+. Featuring a versatile quad-camera system, a powerful Snapdragon processor, and a stunning Super AMOLED display, this phone is designed for mobile photography enthusiasts.",
+      category: "Mobile"
+    },
+    {
+      id: "11",
+      name: "Redmi K40",
+      company: "Redmi",
+      price: 1249900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 15,
+      stars: 4.4,
+      reviews: 26,
+      image: [
+        {
+          id: 1,
+          img: "https://api-rayashop.freetls.fastly.net/media/catalog/product/cache/4e49ac3a70c0b98a165f3fa6633ffee1/r/e/redminote10s-white_pe8ft2ykuomibik4.jpg?format=jpeg&width=368",
+          filename: "first"
+        }
+      ],
+      description: "Experience flagship performance with the Redmi K40. Powered by a Snapdragon processor, featuring a high-refresh-rate display, and equipped with a powerful camera setup, this phone is designed for those who demand performance and style.",
+      category: "Mobile"
+    },
+    {
+      id: "12",
+      name: "iPhone SE Plus",
+      company: "Apple",
+      price: 999900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 14,
+      stars: 4.6,
+      reviews: 22,
+      image: [
+        {
+          id: 1,
+          img: "https://vlebazaar.in/image/cache/catalog/-Apple-iPhone-SE-Rose-Gold-32-GB-p/-Apple-iPhone-SE-Rose-Gold-32-GB-p-550x550h.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Get more with the iPhone SE Plus. Featuring an enhanced camera system, the powerful A15 Bionic chip, and the familiar compact design, this phone offers a perfect blend of performance and convenience.",
+      category: "Mobile"
+    },
+    {
+      id: "13",
+      name: "Motorola Moto G60",
+      company: "Motorola",
+      price: 1149900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 19,
+      stars: 4.2,
+      reviews: 18,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim1.flixcart.com/image/850/1000/knoxnrk0/mobile/g/l/d/g60-panb0000in-panb0016in-panb0012in-panb0014in-motorola-original-imag2aq9cgb9veqw.jpeg?q=90",
+          filename: "first"
+        }
+      ],
+      description: "Unleash the power of multimedia with the Motorola Moto G60. Featuring a high-refresh-rate display, a large battery, and a versatile camera system, this phone is designed for entertainment enthusiasts on the go.",
+      category: "Mobile"
+    },
+    {
+      id: "14",
+      name: "Realme Narzo 40",
+      company: "Realme",
+      price: 849900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 16,
+      stars: 4.3,
+      reviews: 15,
+      image: [
+        {
+          id: 1,
+          img: "https://i.gadgets360cdn.com/products/large/realme-narzo-20-5g-db-809x800-1622031986.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Immerse yourself in the Realme Narzo 40. Packed with features like a high-resolution camera, a powerful processor, and a sleek design, this phone offers a perfect balance between style and performance.",
+      category: "Mobile"
+    },
+    {
+      id: "15",
+      name: "Redmi Note 11",
+      company: "Redmi",
+      price: 1099900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 17,
+      stars: 4.4,
+      reviews: 21,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71yTvU9VgdL._AC_UF894,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Redmi Note 11, a perfect blend of power and style. Featuring a sleek design, a high-refresh-rate display, and a versatile camera system, this phone is designed to elevate your smartphone experience.",
+      category: "Mobile"
+    },
+    {
+      id: "16",
+      name: "iPhone XR2",
+      company: "Apple",
+      price: 1049900,
+    colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 20,
+      stars: 4.7,
+      reviews: 24,
+      image: [
+        {
+          id: 1,
+          img: "https://imageio.forbes.com/blogs-images/gordonkelly/files/2019/05/Screenshot-2019-05-22-at-00.36.27-1200x815.jpg?height=482&width=711&fit=bounds",
+          filename: "first"
+        }
+      ],
+      description: "Experience the future with the iPhone XR2. Featuring the latest A14 Bionic chip, a vibrant Liquid Retina display, and an advanced camera system, this phone delivers on performance and style.",
+      category: "Mobile"
+    },
+    {
+      id: "17",
+      name: "Motorola Moto E40",
+      company: "Motorola",
+      price: 999900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 18,
+      stars: 4.2,
+      reviews: 20,
+      image: [
+        {
+          id: 1,
+          img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202110/Screenshot_2021-10-06_at_5.14._1_1200x768.png?size=1200:675",
+          filename: "first"
+        }
+      ],
+      description: "Explore affordability without compromise with the Motorola Moto E40. Packed with essential features, a sleek design, and a reliable battery, this phone is perfect for those on a budget who still want a great mobile experience.",
+      category: "Mobile"
+    },
+    {
+      id: "18",
+      name: "Realme GT Neo 2",
+      company: "Realme",
+      price: 1199900,
+  colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 16,
+      stars: 4.6,
+      reviews: 26,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,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",
+          filename: "first"
+        }
+      ],
+      description: "Unleash the power of speed with the Realme GT Neo 2. Featuring a Snapdragon processor, a high-refresh-rate display, and a versatile camera system, this phone is designed for gaming and multitasking enthusiasts.",
+      category: "Mobile"
+    },
+    {
+      id: "19",
+      name: "Redmi Note 12",
+      company: "Redmi",
+      price: 1299900,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 14,
+      stars: 4.5,
+      reviews: 24,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81sTK4zipDL._AC_UF894,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Step into the future with the Redmi Note 12. Featuring a powerful camera system, a large battery, and a sleek design, this phone is designed for those who seek both style and performance.",
+      category: "Mobile"
+    },
+    {
+      id: "20",
+      name: "iPhone 15 Mini",
+      company: "Apple",
+      price: 899900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 20,
+      stars: 4.8,
+      reviews: 28,
+      image: [
+        {
+          id: 1,
+          img: "https://www.trustedreviews.com/wp-content/uploads/sites/54/2023/09/iPhone-15-920x657.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Experience the power of the iPhone 15 Mini. Featuring the latest A17 Bionic chip, a compact design, and a high-resolution camera system, this phone is perfect for those who prefer a smaller form factor without compromising on performance.",
+      category: "Mobile"
+    },
+    {
+      id: "21",
+      name: "Motorola Edge S",
+      company: "Motorola",
+      price: 1349900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 15,
+      stars: 4.4,
+      reviews: 22,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIVFBUVFRISEhISGBISEhgSEhESGBIRGBgZGRgUGBgcIS4lHB4rHxgYJjgmKy80NTU2GiQ7QDszPy40NTEBDAwMEA8QHhISHzEnJCsxNTQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDE0NDQ0NDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQxND80NP/AABEIAQUAwQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAAIDBAUHAQj/xABREAABAwIBBgUPCAYKAgMAAAABAAIDBBEhBQYSMUFRMmFxgZEHEyIjQlJyc5OhsbPB0dIUFyQzVGKSlBUWU7LT8DQ1Q0RjgqKjwuEldIPD4v/EABoBAAIDAQEAAAAAAAAAAAAAAAIDAAQFAQb/xAAuEQACAgEDAwMCBgIDAAAAAAAAAQIDEQQhMRJBcSIyURMzFCNCYYGhBcFikfD/2gAMAwEAAhEDEQA/AOv1NQxjS57g1jRdxOoBBtVn7HpFsTXODcLlt8eTSA855lfzxkJboDgtY6R2OtxOizmt1w8oC5pSMADjxlXNPRGa6pCLpuMcoLjn7Le3W287P/2nDPqc9xH5M/GgjTOlq9A9KuRHk6W+9W/w1XwU3qpLuFLs+px3Efkz8a8Gfs/eR+TPxoXkZyfiZ71Gz+cQfQp+Gq+Dn4t/IYsz3nPcs8mfjUozyn71nkz8aEY1diAU/D0/Bz8Z+4RDPCo71nkz8aX63z97H5M/xFjNYE2YhjHPOpjXPPI0E28yF0UrsdWty8ZL9d1QXxYOazS120LWG9xMmAWNJ1VKgHAUttlo6h3nDrLOzSzW+XyyzVLnfJ43aGi1xaZZbaThpDFrAHN1bwNiK8kvzffOaWCKldKCWgGDSDy0HSDHvB0iA07dm1Z0+ly9KwjRjxuYjeqvPtbTHkiqR/yT/nal/Z0/4KhEeXXZGowz5RBSsMnAa2lje9wGBdotbfRG9aFJkjJsrGyR0tI9jwHMc2CIhzTtHY/zYoVFncgZ87Uv7On/AAVHvTXdVubZFA7kbMLdLgjo5AofsdL5CL4U05AofsdL+Xi+Fd6GTID/ADuzfsIvwyfGl87s37CL8L/jRv8AoGi+yUv5eH4Uv0DRfY6X8vD8K79OROoCB1WpbYxQDiLJ/YbJ3ztS/s6f8FR70aHINF9jpfy8Pwrz9A0X2Sl/Lw/Cp9OROoDPnal/Z0/4Kj3rz52Zf2dP+Co96NP0FRfY6X8vD8KX6CovsdL+Xh+FT6ciZBih6q4JHXIWaP8AhyPa7ma9oB5NJdDyPlaGpjEkLw5hwOwsdta4bCELV2aOTZWkOpImE6nxNEL2neHMt0G4Q3mfFJk7KbqVzy6Cpa3rbjqe06Wg47A4Frmm28IZRceTqeTrySjv/N0kJ0E86B2c3FFTj/VOUA0zW6L3OOi1tyScAGjEu5gj3OnhzeKp/wB6dc8lYXQPYLXfpNF9VyDa/Few51qabavJT1HH8mbJl0g9hGwM+/pFzhvNsG8y0cm5RZKLi7HtsHs0y4Y6nNJxthqKEOuhrrSR6Wi4FzSXMcLAgsuMRe9+YLSzZjfpBxBs8tDfvBty48moc6XTdNzwxWpprVTcTYytljrR0GjTksCQ5ztFg2XAPZE7ln0+XySBM1miTw426BZx6OoqjnHTvZM9xGDzgfR0ixHOsyJhe7QY3Fw1aWlyvJ2DHzIbbpqzC4O1aep0pvnHIeQPuSLi4NsNu4q7E5YWSXXubkgjAnaAbA9FlsMcrucowr/RLBpRuUGVj2iXwHDpsE6Nygyqe0S+AfSEmxelg0yzZHyjc6nbQaCxHDlqw62BN5HN18gA5ljZA6nTqesjmdUtfDA8viaGuD3YODWuN7C1xci97bFsdTs/QWeNq/XPRLpKlGCaR6zO4JZ75nvrXsljmbHIxnWHiQPLXx6bnYFuIPZO5eKyIM3smilp4qcPL+tg6TraOk9zi5xA2C7jgrmklpIlBJ5JklL03TUekm3RnCXri8L1EXLzSXMkJC9IvURK8upkhLppdcUJKV1MnSbriEM5zbKGTHDAlzgTvAmgA/fd0op0kKZ0H6dkzw3+vpUux+kkeTqdkl6kq4YH51cObxVP+9OufN+qdy+9Heccuk+pHeR0zfXO9qEMkytZHLMWh/yaOaoa06nPjF2A89lp0S6anJ9ipbHq2XczhkKte1rnQxnvPlApg8jZo9c7JOpKGWOW0zXtfhw+92aNsNHkwQtJp1Dmuk7fNK9rLvextnOJtbSwa2+GsDEIozQrnyRzQPcXimEUsDn3LmNe/QfHc9ybtIGwg8y6tT690txWo035Tw+C/lml0maXYiwsXPLWtse5JdgeRDbaR7gdDQLNbxEI2ggbSGgFw8ynzgqRJUSaekYaVrQxjXaOm8uazS4rvdckY2bYbFkGosdNjWxujAdZjpLOGk1o4bnG93DbzIpahdeGhVOlkq89XIRUjdEYcf8AxV5jlmU0ty8bAT5yPcrzHKzyY2pTUsMvxvTcpG8Eng+0KONy9yge0SeD7QgsXpfgVp/ux8o3Op+foLPG1frnokLkM5gn6CzxtX656IrqjB+lHsB+kvNJMuvLoskHkrzSTbpEqEPS5K6aSldcyQ9uldeJKZO4PbpXSskApk4JCmc39OyZ4cnr6ZFiDc95zHVUEgAcY+vPAOAJbLTGxQT4Oo66ko/51pJB3ID5e+sreSl/ckQjk2pDGlzm6bHaccjP2kTwWvbxYFFucB7ZW8lL+5IgZru1OHGVq6eKlW0//bFO2TisooOzbe1xNJWUroTfR6/IIZY2nW1zXC9+Ma1q5FpYqdro2Stnlmcx1RI0FrLMN2RR3xLQSSXHXYKPNjITqt0gEzIhEGmzgXF2lfgtBGAtjyhFdHmtIxwtUXHi3AfvJKrqrllvdCbbbLIYS5A/ODJfbBKzQJdckPF2uviWuGGBNzhqvxArGkAaC0sja0lriyISnTc29g97yTogm+iDr5rG2XmusWl2o6JINwbG1+RCWi0uNr2BtcgD2lPdMJNS+StVqbIxcXwiShaQCXcJ2J5S4LQY9UmOsOXAcgxJ6bKZj01LGxQuzJ5ZoMcvMpSWhfxmNvMXsChjen12MTxu0Hfhe0+xDZ7H4FULF0fKCLMM/QWeNqvXPRFdDmYf9BZ4yr9c9EJWdHg9az26S8VaWtY0XvfjuA2/hHXzXRxi5cELN16d5wG84LKdlFx4Idb7o0f9T8f9ITGyvvfrbCd73veelNVMu4cYuRp9eZsOl4ILvOMF6Hk6mHnICptrJBrjYfBe4ekFTx5TZ3THs3mwePNj5lHBIsRobLAbJuYOkpwifvaOQJ9PVRv4D2uO0XsRyg4qyEO3wT6GCoIH98OgJ3WX7x0BXAE5q5n9gJV4KPW5NwPT70DdUMHr9ECLdjPtv/aU66UFz7qnf0ih8Cf1tOlTewprB1eySSSQCAmcYIkq8CNJtKRcaxoyjBAPcHnXQM8nWme3v6Zrxr1xyOB9auf9w7nWvpPZkpanaOP3KVLRPfYtjc4Emxa5vfaON9Qv7UQ5Kyc7SbpNc0nEC7CbdCFYJHXsHOABNgCQBfWirIbiXC5J1a8U3GzMu6XY08tUdmDhni7EexCNRGWHFjgL91e192xGGcLrMQPM8k6yeUqRy4i447Di9SxvVPSUsblxknHJoxuUtQ7tT/B9oVRjlLM7tb/B9oQz9j8Cq4/mR8oK8w/6EzxtV6562pJwL2sSOESbNbyu9gQ9mUfoTLnDrtVZreE/tzugca3OsE20rWHBaOC33njVKqCaTZ6Wc8bFaV7n6sRvcLN/ys9ruhMEAvc9k7eTc2Vx7QFWkcrsElwBGe54SF4JFXfIoTMjccmhRhml11edcCzTUJzZ0mUTZprTLkjWnWB7lJDWyM1O029683PM7X0qh1xe9cQ9OSy6E1hoJaOvY8YGxGtp1j/rjVwPQYJCCHA6LhiCNf8A2Fu5PygHjGzXN4Q/5DiQSraKV2lcd1wbDpg3E8g2kncAue9UV7n1FEA04tnDQMXE9cp9gRj13G51nzDchXOZ96/Jnhu9fTJFsMRyZd8Ok6p0pJ2iElVyVsAFnsfpQ/8AUk9axAZ4B50d57/0of8AqSetYgN/APOtjSfaRS1XH8mNDwkV5C1hCkPC50VZCOIT17WZN3KNTON3YIGldijPOR/YIHkdigj7SVrLPNJTxuUT2hrRte5unxMYRccpOviFt6bE/Efe910Le4+Vexoscp5Hdg/wfaFSaVO53YO5PaFJr0PwV4xxZHyg36nsINE02x67VD/deiKWOyyOps36A3x1V61y2aina55w4Ley3FxOA6B51Qqnskamos6WzNqJmDurnc0Fx8yzKmq3Mdzlrfet6ogAGAAtxIZyhXQtJHXA4jZHeQjl0b2V+lplSN8m9kVJ6x3eD8RPsVU1ju9HM7/pQT17dkch5Qxv/JVHVv8Ahv6WH2q7iODa0lku6NJtVvDh0FTsmvtx3Yg9CyGVse0lvhC3n1K0144rKvOKfDN6i7BqsenrNZU21m46SPerzXt74Ku2lyaUbSW69jl0XB2JtsG0HZ/PEow4bwmueudaewx9Mlhm6ypDgCDgcUP5XfevydxPd66nT6apsSzYbuby7QqVS/SrqDif/wDdAg1C/Kb8GHr6+k7UkvEllmUAOezD8pDrYfJZG34+usQE/gO510PPEdtkO6GBg4g58zndOg3oXPJeC7nWxpPtFDU8GPFwudE2RDiEMx8JEeRTiFYXtZl2ovZyP7BBMrsUX5yO7FBkzkv9J2lE8kly5/fNY1v4Q09AaVHGR2O9tjzhV2vtsBG4+zcrEUjdjOl1x0WQLktPg0CQG+E648EA4+fzJ2l2LuT2qqXk4lTNPYnk9qOxeh+CvFeteUdI6ncmjk8G1z16qAG9xldYLVfVkAtjb119zpvJ0WB227u6P3RuF7LAzBg0qJukexEtULA2veV17nj1Iknc1jbAAACwAwAG5ZtUc4G6u3E2kYWUKdzrmWR0n3eCz8Go891hVWiMAAAN1gtjKVTrxQjlTKIF8VtUQUY5YmiMpyGVMwG1Zc9eFn1Na5xwUDIydaRqddCO0T0WmonjYtPrSV7FWubvtuTGQ2XrgFky1UpPJdcZx3NFk0hAIxBxBG1XaCo0joHBwF28m0e1UcjS9g9h7l128QcL26QelP6+1srDo3Bdo3Nxa4IuBzoPqSk8MswnJYeTXcTbWUwVTm7bhJz1VkeuLriy79RotfLhg7a0h1t9tYVuZgFfQEG7XPa5p3gywEelDlQ+2O5X8k1RfU0AJvoPa0cnXofYArMrXKpxf7FHWz6on0AkvUlTMkCM8OHJ4FP6ahc6nHYu510fO36yTxdP6ahc6qhg7nWxpPtlHU8GKzhIgyOcQh+PWt3JLsQn/pMy1FnON3YhBsxxRXnC/sQhCY4oG/SFQiPSU8BVa6ngKGPJZkti3dWWHA/ztCp6StRajye5Ms9j8CIr1LydFzAktQjx1V61yu5Qq7XxWBmlU6NE0f4tSf8AdcqmWco6IOKVpKU4qTAvg53tL5KmW8qAXAKDaidz3a8E+tqi9xxwSgZZL1erwumJ6L/G/wCPT3Z7DArGAUT5QFA6UnUsWXVNnomq6o4RYfIFA59+Ib9ihdKN+keLV07eZOhYX2ceCNWy/EBuT6dPKckkjOvviW6d4YDrxIJvttqVmmBkewDvr8zcSfMqT9yLc2snBjTI8HSeLMHesOJJ3E+haH4ddaS/kQ9RGEcy2XYryREKlM4hFM8DDqWLXUmtW5aVNbIkNZGXcw5nqxmw+9ZTDdLH55YlSqmlqnzSP02n8bF62NZ10HBNMG6fUj6VSSSVMqgVnWO2v8XT+mdc7ru65Sui50/XP8XT+mdc7r+65StjR+wo6kwm61tZLOIWI3WtjJxxCsdjPsQ/OB2AQnMcUT5edghaZKlwHQthimhVcFTxIY8j5LYsgq5T6ncnuVEFX6UXa7wfaE2fsfgStpLybWRanRpgN0lR61yHstVxcSLqaKq0YCPvzed7lhvJe7DG2J1AAbyTgByoJWfT06S5aL1VKdrk/kfEFMXnZs16gByk4BVjKxowPXHcVwwc+t3mHKoJZ3O1nAagMAOQBY8k5Pc3YaiMI9MCxJM0bdM8Vw3p1nm6VAZHOw2a7AWA/njTWMJ3nzK3BRvdqFh0DpTa61nf/pci5Oc93/fBHG1oxdjxDVz71aY57yGtaccBYYnkClZRxsxe653N95VhmU2x4MAbvI1nlJV+KcVhYiv7ZUulGH/J/wBG3kTIbWEPmsXDFrL3F979/IiJ8zSgQZfdvU8eWxvTa7KYcP8Akx7433SzL+EuEFj37lUndcLGGW221qJ2VeNW46ivGcnaKrM4RHlVgxVjNul0JqB5FjLM9w42smp2A9IKggp5KmRsbNbzr2NbteeIIqyjTMjrMlsYLMjOg3kbNTi549vOsrWWKzLjwjWfpSi3udkXqSSzTgGZ0fXP8XB6Z1zrKHdcpXRM5/r3+Lg9M655lHuudbGj+2UdQD7da1qA4hZA1rUoTiFZ7FGQsuHBDMutEmWjghuVJlwHSRBTxFQBTxoY8jpcE7da1KIdg/wfaFlN1rXoR2t/g+0Js/Y/Ah+5eUZTuC650Wh8lza5JL3di0bT6Nao1BJGiBosBuG31nvnHuj6Nlk6okOkcTYOfbiu4k9KUFO95vqbvOrm3qnJynFRiuxv01xxllRsZP8A0rbKVreG4N4raTvw7Oey3KbJ0TW46Rd3wdonm3LMr6ANxa4kbjiUcdDJLql/QX1q4y6VyNbURt4LByvs49GoedNlrXHaVVbG47FO2l3lH9WFaxFYYz6dlm74K0k7jtUWiSr7mRt1kKF08fGeQW85VCyU5vLJKuEVuyroFehjlKaobGDncT6EhVuvsHI0elLUccsryceyHxUrztK1qDJpccSANpdc9Ddqz4qnetOgq8U2KW2+RFlsor0o6DkOljhZZgu51tN7rFz93IOIKrlo/TsneG711Oo8k1VwOJeZUdetyd4bvXU6fekqtijRKcrsye+52RJepLONIDM5/r3+Lg9M653lHuuddFzlHb3+Lg9M651lLulsaP7ZR1APDWVp0Z1LMGtaNJrCs9ilJDcsHBDsqIMrFD8qVPgOojCmYoWqZiCI2RPGtqiHan+D7QsSNbtKO1P8H2hNn7H4K8/dHyjHhoQ7Skdi0vkDRvLXkG/FdTl+ItawwAGCcx/af88/rHKm6SyRTNRijfjZiDii9LUADWqUj9LXq3BWIMnSOGm/sGnEXHZO5Bs51bpsm6Ww2TJ3yksN4Qenqi5ZSy/6MxjT3LU4ZPkfrvZFVFkkuwYwuI1m2A5TqClm+TR4SThzhrZA3rp5C/gNPOqNnVLaKwabdcF63l/CBdmRN69OQ271tyZaib9XSh33qiRz/wDQzRHnVZ+cFR3PWY/FQRN87g4+dKVWOWUbb4P2oyzkRm/0Lz9CDYQehX35eqz/AHmXmLW+ZoCkp8rVTjjM943PbG8f6mqdCZVc/wBjHkyUW9yVAxjmHUug0bNNt3sZytYGfu4eZVqnIsb8WjHdhfpR/Ra3Qt2wezM7IlUL2OGpadW69bk/wz66nWQ2iLHciuQy6VZQfdfb/eg9yKyTdbTOOpKSkjuySSSohgdnIO3v8XB6Z1zvKo4XOuiZyfXv8XB6Z1z3K2srZ0fsKOoBvar9NrVA61dpjirPYqSQzKqwpFuZUKwpEmQdaGNUrVE1StQxGMniW7AO1P8AB9oWFFrW9F9W7wfaE2XsfgrS98fKM6liL2aIBJ05QANZJe5bFNkyOEab7Pk1hutsfvcn5BcxlPpgXke+oF+9AkcLBex075nXODAcXHf3rd5WfB7I02220KGN8rtRPEPSrrnxR9jbrsnetJEbfDfrdyNV5kLGt0Rg3bbuuU7VE6jYdSN5fI2Gp6F0x4MqtmllGi+TsNjIwI4xyMGvnJVH5GN6230G6ygfRHjUbZx3dW5lGiG9ROoxvWsaN3GnsoOLpQdOQOsw20ZK18n5PxGGAWhHSNGtTjc0YLqikBKbJNKwACuUURJCgpqYk71vUNLo8qJvYVjJWyjkUSsuwWkaMP8AE4jxoJhYW11GDh2xuB2ETQ3C6vTsQTnZRtZlOhe3ASu0iPvNmgBPnVa2WzLVUnjDOsJJJKsNA/OT69/i4PTOud5WGJXRM4/r3+Lg9M657lnWVsaT2FK//YNnWrdOqrtaswK12KkkMykViSBbOUSseQJMwocEbVI1MCe1Cg2WYRiFut+rf4PtCwqfWFu/2buT2hNl7H4K8vevKLWbdGXxi47HrlRYXtftjr47BxoqjobAC2oWGFgBuA3JmYVKHUbXWxMtVfDXaV6KmUnEs6EkkjRlFtsF3Up3KF9OUXPpBuVSWhaiUkA4NAq6MhMLXIikyeq7snniRZRMGJouXrY3FbTcnK1Dk4brrmUTBiQUbnbCVowZL3+ZbtPR8SuMpUDmkEosyaejA1Cy0IadW2QKZrEDkGokcbLIKz5H/kMl+FJ6+mR4MEB58n/yGS/Cf6+mSZvKGR5OlpJJJYwEM4vr3+Lg9M659lrWV0LOD69/i4PTOufZcHZFa2j9hTv/ANg0/WrECgcMVPErfYqyIa8rIeFrVyynpUzsOBoCcF4E5oQINlil4QW47gO5B6Qsajb2S2X8A8ntCZP2PwV374+TofU0Zehb46r9a5F4jQn1MD9Ab46r9a5GF1jp7Gs1uV3sUD41beVC8hGmwGUnxqIxK28hUa/KcEI7ZI1h1huLnkcTBijyDglbCrMUA3IVmz2jBtHA+TjkeyIdADipabPQE9nT6I+7MXeYsCjyd2DKOMKUtWVk7LUMvBfY7Q6wtzrSc5KechLAiV4SvF4SukHBAefH9YZL8J/r6ZHSBc9v6wyX4T/X0yCXAUeTpiSSSWMBHLw+kP8AFQ+mdAOcI7IroGWhepd4qL0zoDzjb2XMtbRv0lO9bLyCztaljTXtxTo1a7FZletWY9adYFnPCXI7FbEYCkaEwKRqFBNFui1rVfwDye0LLoxitN/BP87QmT9j8Fdr1x8nRepofoDfHVfrXIvDkHdTc/QWeOqvXORa1yx48Go+RzlWneGgucQ1oxJJsAONTTPa0FzjZo17ebjKDc4MruLixuDhs1iPl3v49QRxWWDJ4Ic4c6dC7IzZ3Q62/wC5+8eLWgqSdz3Fzjck3PH71ffk5riXPJ3kk3J4yViZQlDHWZH2I2nWUb2OLc0I5mDZdXoKhu5D9NlPYWNK1aaWN+olh3XwUjIjRrskbrB0XDUQbEchRFkTOJzSGSm7Tg15NuZ27l1b96E+tu5UmNcNhtxrso9RxbHXGPBFxiF6hLNfK5Fonm/7O+twHccbhs3jDWBcta4EAg3B1EJL2eGGegIFz5/rDJfhP9fTI7sgTPr+sMl+E/19MglwHHk6WkkkljAbylCTUuPfQst/ldID++3pQHnPHZ4XScrwuuyVjS9zA9j2jhPhfYuDd7gWtIG2xG1A+ccTX6L2HTYbi4B7E964HFp4jir+knvhla6OwDSRm6axi2XUJ3Jjcnu3LQyhCgYNW1Z72omqsnO3FZr8nu3FceGHGBkaKe1q0P0e7cU9uT3bkCOuBBRtxWg/gnkXtPRkbFcZRl2GoEEclxa6KeHBoS631Jhh1NahrqIsB7KOepa8bi55eOkOHQUYNK4JQ5aqsn1L3MAtIQJGSAlkhGzDEEEmxGOO1FfzrxllnUcgcbaWhMwjjAu26x1JLZl5xb3QaZbykWizTifq+LYZPSBzlC7Ke+J86H5s/o3uLnU8tz/iMwGwDDUBYKObPuMiwp5BvvJHq6E+M4JciXCTfBvyMDsNipTZPBvgsduekY/sJPKR+5e/rtF9nk8pH7lHZB9zqhJdhVWSSDdqqscW4OFlYfnnCf7vJ5RnuVSXOaB393k8pH7kLlHswlGXdGvQZR0cHYj2IgZouAc0gg6iFz52WodkUg/zs9yt0GdTI8BHIWnWNNnuXY2RXLJ0v4DSRltWB2WwIOwjcivJ2VSA3TOi8gaTgLtcd7m7+MLmMefMINzTSu/+SP3KcdUKG9/ksvlI/co5wfLONS7I7HBW31tFu+YdIc41hA+edQx+VcnRtN3R6LnAbA+aMt80bihuTqoFre00pEmwyyBzRx6LACeS4XnU1gnrcouqpi5xYRLI4iw0rODGjcLnAbmqvJrsMgpfqO5dCSbYJIBh6Qs3KGRaeYgvYQ7vo3yQu5C5hBI4ikkup4ONZKjs1aXfVfnaz+ImnNGk31X52s/iJJKdTONC/VCk31X52s/iL39UaTfVfnaz+Ikku9UvkmBfqjSb6r87WfxF5+qFJvqvztZ8aSSnVL5Jg9/VGk31X52s+NIZo0m+q/O1nxr1JTql8kwZ1fmBQSjsmzhzgBp/KJXuAGr6wuB5wsCTqQwX7GtqQPvNhd59EJJKHRnzPx/b5/JQpfM/H9vn8lCkkuHBvzRxfbp/Jw+5O+Z+P7fP5KFJJdIL5n4/t8/koV58z8f26byMKSShBfM/H9um8jCvPmfj+3TeRhXqSh0XzPx/bpvIwpfNBH9um8jCkkoQs0fUjpQQX1VTIAb2AiYDzht/OjvI+SoKeMMhjEbNeGJcd7nHFx4ykkuM6X0kklwh/9k=",
+          filename: "first"
+        }
+      ],
+      description: "Dive into the edge with the Motorola Edge S. Featuring a Snapdragon processor, a high-refresh-rate display, and a versatile camera system, this phone is designed for those who crave power and style.",
+      category: "Mobile"
+    },
+    {
+      id: "22",
+      name: "Realme 10 Pro",
+      company: "Realme",
+      price: 1099900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 18,
+      stars: 4.7,
+      reviews: 26,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41My0l+SWeL._AC_UF1000,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Elevate your photography game with the Realme 10 Pro. Featuring a high-resolution camera setup, a powerful Snapdragon processor, and a vibrant Super AMOLED display, this phone is designed for those who demand quality.",
+      category: "Mobile"
+    },
+    {
+      id: "23",
+      name: "Redmi 9T",
+      company: "Redmi",
+      price: 849900,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 16,
+      stars: 4.3,
+      reviews: 20,
+      image: [
+        {
+          id: 1,
+          img: "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-9-power.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Enjoy a budget-friendly yet feature-packed experience with the Redmi 9T. Featuring a large battery, a versatile camera system, and a sleek design, this phone is perfect for those who seek affordability without compromise.",
+      category: "Mobile"
+    },
+    {
+      id: "24",
+      name: "iPhone 16 Pro",
+      company: "Apple",
+      price: 1399900,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 14,
+      stars: 4.8,
+      reviews: 32,
+      image: [
+        {
+          id: 1,
+          img: "https://cdn1.smartprix.com/rx-i5n1dTTOB-w420-h420/apple-iphone-16-pro.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Unleash the power of pro with the iPhone 16 Pro. Featuring the latest A18 Bionic chip, a ProMotion display, and an advanced camera system, this phone is designed for professionals and enthusiasts alike.",
+      category: "Mobile"
+    },
+    {
+      id: "25",
+      name: "Dell Inspiron 15",
+      company: "Dell",
+      price: 8999900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 12,
+      stars: 4.5,
+      reviews: 15,
+      image: [
+        {
+          id: 1,
+          img: "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/inspiron-notebooks/15-3520/media-gallery/in3520-cnb-00055lf110-sl.psd?fmt=pjpg&pscan=auto&scl=1&wid=5000&hei=5000&qlt=100,1&resMode=sharp2&size=5000,5000&chrss=full&imwidth=5000",
+          filename: "first"
+        }
+      ],
+      description: "Experience reliable performance with the Dell Inspiron 15. Packed with the latest Intel Core processor and a vibrant display, this laptop is designed to handle your everyday computing needs.",
+      category: "Laptop"
+    },
+    {
+      id: "26",
+      name: "Dell XPS 13",
+      company: "Dell",
+      price: 1499900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 8,
+      stars: 4.8,
+      reviews: 20,
+      image: [
+        {
+          id: 1,
+          img: "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-13-9315/media-gallery/notebook-xps-9315-nt-blue-gallery-3.psd?fmt=pjpg&pscan=auto&scl=1&wid=4108&hei=2874&qlt=100,1&resMode=sharp2&size=4108,2874&chrss=full&imwidth=5000",
+          filename: "first"
+        }
+      ],
+      description: "Elevate your productivity with the Dell XPS 13. Featuring a sleek design, a high-resolution display, and powerful internals, this laptop is perfect for professionals and enthusiasts alike.",
+      category: "Laptop"
+    },
+    {
+      id: "27",
+      name: "Dell Latitude 14",
+      company: "Dell",
+      price: 1099900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 10,
+      stars: 4.4,
+      reviews: 18,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,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",
+          filename: "first"
+        }
+      ],
+      description: "Stay productive on the go with the Dell Latitude 14. Featuring robust security features, a durable design, and reliable performance, this laptop is perfect for business professionals.",
+      category: "Laptop"
+    },
+    {
+      id: "28",
+      name: "Dell G5 Gaming Laptop",
+      company: "Dell",
+      price: 1299900,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 6,
+      stars: 4.6,
+      reviews: 22,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81iErOUaCSL._AC_UF1000,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Immerse yourself in gaming with the Dell G5 Gaming Laptop. Featuring powerful graphics and a high-refresh-rate display, this laptop is designed for gamers who demand performance.",
+      category: "Laptop"
+    },
+    {
+      id: "29",
+      name: "Dell Precision 15",
+      company: "Dell",
+      price: 1799900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 5,
+      stars: 4.7,
+      reviews: 25,
+      image: [
+        {
+          id: 1,
+          img: "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/workstations/mobile-workstations/precision/15-3581/media-gallery/workstation-notebook-precision-15-3581-gray-gallery-2.psd?fmt=pjpg&pscan=auto&scl=1&wid=4409&hei=3075&qlt=100,1&resMode=sharp2&size=4409,3075&chrss=full&imwidth=5000",
+          filename: "first"
+        }
+      ],
+      description: "Unleash creativity with the Dell Precision 15. Featuring powerful hardware and precision engineering, this laptop is perfect for professionals in design, engineering, and content creation.",
+      category: "Laptop"
+    },
+    {
+      id: "30",
+      name: "Dell Vostro 14",
+      company: "Dell",
+      price: 999900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 7,
+      stars: 4.3,
+      reviews: 16,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,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",
+          filename: "first"
+        }
+      ],
+      description: "Stay connected and productive with the Dell Vostro 14. Featuring a sleek design and essential business features, this laptop is ideal for small business owners and professionals.",
+      category: "Laptop"
+    },
+  
+    // Lenovo
+    {
+      id: "31",
+      name: "Lenovo ThinkPad X1 Carbon",
+      company: "Lenovo",
+      price: 1599900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 10,
+      stars: 4.8,
+      reviews: 30,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61ixdYUvJDL._AC_UF1000,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Experience premium business performance with the Lenovo ThinkPad X1 Carbon. With a lightweight design and robust features, this laptop is perfect for professionals on the move.",
+      category: "Laptop"
+    },
+    {
+      id: "32",
+      name: "Lenovo Legion Y540",
+      company: "Lenovo",
+      price: 1299900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 8,
+      stars: 4.7,
+      reviews: 25,
+      image: [
+        {
+          id: 1,
+          img: "https://www.digitaldreamsjaipur.com/wp-content/uploads/2019/12/Y530-3.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Dominate the gaming arena with the Lenovo Legion Y540. Featuring powerful graphics and a high-refresh-rate display, this gaming laptop is designed for immersive gaming experiences.",
+      category: "Laptop"
+    },
+    {
+      id: "33",
+      name: "Lenovo Ideapad 5",
+      company: "Lenovo",
+      price: 999900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 12,
+      stars: 4.4,
+      reviews: 18,
+      image: [
+        {
+          id: 1,
+          img: "https://i.rtings.com/assets/products/bvl6rQVy/lenovo-ideapad-5-15-2021/design-medium.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Balance work and entertainment with the Lenovo Ideapad 5. Featuring a sleek design and reliable performance, this laptop is perfect for everyday use and productivity tasks.",
+      category: "Laptop"
+    },
+    {
+      id: "34",
+      name: "Lenovo Yoga C940",
+      company: "Lenovo",
+      price: 1399900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 6,
+      stars: 4.6,
+      reviews: 22,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/I/71fDYa07BZL.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Experience versatility and style with the Lenovo Yoga C940. Featuring a 2-in-1 design and a high-resolution display, this laptop adapts to your needs and enhances your creativity.",
+      category: "Laptop"
+    },
+    {
+      id: "35",
+      name: "Lenovo Flex 5",
+      company: "Lenovo",
+      price: 1099900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 9,
+      stars: 4.3,
+      reviews: 15,
+      image: [
+        {
+          id: 1,
+          img:"https://store.lenovo.com/media/catalog/product/cache/90c9f6aca4e4b4913161c59294bbd070/8/2/82HS0196IN-10_4_1.webp", 
+          filename: "first"
+        }
+      ],
+      description: "Get the flexibility you need with the Lenovo Flex 5. Featuring a 2-in-1 design and powerful performance, this laptop is perfect for multitasking and entertainment on the go.",
+      category: "Laptop"
+    },
+    {
+      id: "36",
+      name: "Lenovo Chromebook Duet",
+      company: "Lenovo",
+      price: 699900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 11,
+      stars: 4.2,
+      reviews: 12,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/I/71nDBnG8kGL._AC_UF1000,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Embrace simplicity with the Lenovo Chromebook Duet. Featuring a detachable keyboard and a compact design, this 2-in-1 Chromebook is perfect for productivity and entertainment on the go.",
+      category: "Laptop"
+    },
+  
+    // Acer
+    {
+      id: "37",
+      name: "Acer Aspire 5",
+      company: "Acer",
+      price: 799900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 15,
+      stars: 4.2,
+      reviews: 10,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81Nkv7YQFaL._AC_UF1000,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Achieve everyday computing with the Acer Aspire 5. Featuring a sleek design and reliable performance, this laptop is perfect for students and professionals on a budget.",
+      category: "Laptop"
+    },
+    {
+      id: "38",
+      name: "Acer Predator Helios 300",
+      company: "Acer",
+      price: 1499900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 8,
+      stars: 4.8,
+      reviews: 20,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81g7AiqWrtL.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Dominate the gaming battlefield with the Acer Predator Helios 300. Featuring powerful graphics and advanced cooling, this gaming laptop is designed for high-performance gaming.",
+      category: "Laptop"
+    },
+    {
+      id: "39",
+      name: "Acer Swift 3",
+      company: "Acer",
+      price: 1099900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 10,
+      stars: 4.4,
+      reviews: 18,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim2.flixcart.com/image/850/1000/l3929ow0/computer/l/z/f/sf314-512-thin-and-light-laptop-acer-original-imageew2tgcqywsr.jpeg?q=90",
+          filename: "first"
+        }
+      ],
+      description: "Experience portability and style with the Acer Swift 3. Featuring a lightweight design and powerful performance, this laptop is perfect for professionals on the move.",
+      category: "Laptop"
+    },
+    {
+      id: "40",
+      name: "Acer Chromebook 14",
+      company: "Acer",
+      price: 549900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 12,
+      stars: 4.1,
+      reviews: 14,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,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",
+          filename: "first"
+        }
+      ],
+      description: "Simplify your computing experience with the Acer Chromebook 14. Designed for online productivity and portability, this Chromebook offers a fast and secure way to get things done.",
+      category: "Laptop"
+    },
+    {
+      id: "41",
+      name: "Acer Aspire 7",
+      company: "Acer",
+      price: 1199900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 14,
+      stars: 4.5,
+      reviews: 16,
+      image: [
+        {
+          id: 1,
+          img: "Acer Aspire 7",
+          filename: "first"
+        }
+      ],
+      description: "Unleash productivity and creativity with the Acer Aspire 7. Featuring a powerful processor and a high-resolution display, this laptop is ideal for content creators and multitaskers.",
+      category: "Laptop"
+    },
+    {
+      id: "42",
+      name: "Acer Nitro 5",
+      company: "Acer",
+      price: 999900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 16,
+      stars: 4.3,
+      reviews: 22,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/I/81PUD0rM2NL.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Level up your gaming experience with the Acer Nitro 5. Featuring a dedicated graphics card and a high-refresh-rate display, this gaming laptop is ready for intense gaming sessions.",
+      category: "Laptop"
+    },
+    {
+      id: "43",
+      name: "Acer TravelMate P6",
+      company: "Acer",
+      price: 1399900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 10,
+      stars: 4.6,
+      reviews: 20,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,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",
+          filename: "first"
+        }
+      ],
+      description: "Enhance your business mobility with the Acer TravelMate P6. Combining durability and performance, this business laptop is designed to keep you productive on the go.",
+      category: "Laptop"
+    },
+    {
+      id: "44",
+      name: "Acer Spin 5",
+      company: "Acer",
+      price: 1099900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 18,
+      stars: 4.4,
+      reviews: 18,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim1.flixcart.com/image/850/1000/ki7qw7k0/computer/z/7/f/acer-original-imafyfzrrjgafp53.jpeg?q=20",
+          filename: "first"
+        }
+      ],
+      description: "Experience versatility with the Acer Spin 5. This 2-in-1 laptop features a flexible design, allowing you to use it as a laptop or tablet, making it perfect for various tasks.",
+      category: "Laptop"
+    },
+    {
+      id: "45",
+      name: "Acer ConceptD 7",
+      company: "Acer",
+      price: 1799900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 8,
+      stars: 4.7,
+      reviews: 24,
+      image: [
+        {
+          id: 1,
+          img: "https://5.imimg.com/data5/SELLER/Default/2021/3/IU/HU/QF/120561579/acer-concept-d-7-500x500.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Unleash your creativity with the Acer ConceptD 7. This high-performance laptop is designed for professional creators, offering powerful hardware for demanding tasks.",
+      category: "Laptop"
+    },
+    {
+      id: "46",
+      name: "Acer Swift 5",
+      company: "Acer",
+      price: 1299900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 14,
+      stars: 4.5,
+      reviews: 16,
+      image: [
+        {
+          id: 1,
+          img: "https://5.imimg.com/data5/SELLER/Default/2021/3/WK/BG/YZ/40392018/acer-swift-5-core-i7-11th-gen.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Experience lightweight performance with the Acer Swift 5. With a slim and portable design, this laptop is perfect for those who prioritize mobility without compromising on power.",
+      category: "Laptop"
+    },
+    {
+      id: "47",
+      name: "Acer Predator Triton 500",
+      company: "Acer",
+      price: 1899900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 12,
+      stars: 4.8,
+      reviews: 22,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/41h5xnrY3OL.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Enter the gaming arena with the Acer Predator Triton 500. This gaming laptop features a high-refresh-rate display and powerful internals for an immersive gaming experience.",
+      category: "Laptop"
+    }
+  ,
+  
+    {
+      id: "48",
+      name: "Apple Watch Series 7",
+      company: "Apple",
+      price: 39900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 15,
+      rating: 4.5,
+      reviews: 10,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim2.flixcart.com/image/850/1000/ku8pbbk0/smartwatch/s/l/w/ios-mkn63hn-a-apple-yes-original-imag7eqby6zvzrhg.jpeg?q=20",
+          filename: "first"
+        }
+      ],
+      description: "Stay connected and track your fitness with the Apple Watch Series 7. Featuring advanced health monitoring and a sleek design, it's the perfect companion for an active lifestyle.",
+      category: "Smartwatch"
+    },
+    {
+      id: "49",
+      name: "Realme Watch Pro 2",
+      company: "Realme",
+      price: 24900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 14,
+      rating: 4.2,
+      reviews: 8,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,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",
+          filename: "first"
+        }
+      ],
+      description: "Enhance your daily life with Realme Watch Pro 2. Packed with features and a stylish design, it's the perfect accessory for tech enthusiasts.",
+      category: "Smartwatch"
+    },
+    {
+      id: "50",
+      name: "Redmi Watch 2",
+      company: "Redmi",
+      price: 18900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 18,
+      rating: 4.7,
+      reviews: 12,
+      image: [
+        {
+          id: 1,
+          img: "https://i.gadgets360cdn.com/products/large/redmi-watch-2-lite-941x800-1635745811.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Experience innovation with Redmi Watch 2. Its advanced features and sleek design make it a perfect blend of style and functionality.",
+      category: "Smartwatch"
+    },
+    {
+      id: "51",
+      name: "Boat Storm Smartwatch",
+      company: "Boat",
+      price: 17990,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 20,
+      rating: 4.4,
+      reviews: 14,
+      image: [
+        {
+          id: 1,
+          img: "https://5.imimg.com/data5/SELLER/Default/2021/4/LR/BL/DK/10876653/boat-storm-smartwatch.jpeg",
+          filename: "first"
+        }
+      ],
+      description: "Stay connected and stay stylish with Boat Storm Smartwatch. Its versatile design and smart features make it a must-have accessory.",
+      category: "Smartwatch"
+    },
+  
+    // Earbuds
+    {
+      id: "52",
+      name: "Apple AirPods Pro",
+      company: "Apple",
+      price: 24900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 25,
+      rating: 4.5,
+      reviews: 10,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim1.flixcart.com/image/850/1000/kpinwy80/headphone/r/1/q/mwp22hn-a-apple-original-imag3qe9eqkfhmg8.jpeg?q=20",
+          filename: "first"
+        }
+      ],
+      description: "Immerse yourself in premium audio with Apple AirPods Pro. Featuring active noise cancellation and a comfortable design, these earbuds redefine your listening experience.",
+      category: "Earbuds"
+    },
+    {
+      id: "53",
+      name: "Realme Buds Air 2",
+      company: "Realme",
+      price: 14900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 20,
+      rating: 4.2,
+      reviews: 8,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim2.flixcart.com/image/850/1000/kk1h5e80/headphone/b/1/j/rma2003-realme-original-imafzh4ghzzjgfex.jpeg?q=90",
+          filename: "first"
+        }
+      ],
+      description: "Immerse yourself in the world of music with Realme Buds Air 2. Featuring dynamic drivers and active noise cancellation, these earbuds deliver a superior audio experience.",
+      category: "Earbuds"
+    },
+    {
+      id: "54",
+      name: "Redmi Earbuds 3",
+      company: "Redmi",
+      price: 12990,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 15,
+      rating: 4.7,
+      reviews: 12,
+      image: [
+        {
+          id: 1,
+          img: "https://dailydeals365.in/wp-content/uploads/2023/05/31Zkaa4jD6L.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Enjoy wireless freedom with Redmi Earbuds 3. Compact and lightweight, these earbuds offer a comfortable fit and clear sound for your everyday activities.",
+      category: "Earbuds"
+    },
+    {
+      id: "55",
+      name: "Boat Airdopes 441",
+      company: "Boat",
+      price: 2490,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 22,
+      rating: 4.4,
+      reviews: 14,
+      image: [
+        {
+          id: 1,
+          img: "https://www.lifanso.com/public/uploads/products/meta/g22ibelC6b2HK2BC1NWY9DS3A2uN3YynoIEDikBo.jpeg",
+          filename: "first"
+        }
+      ],
+      description: "Experience true wireless freedom with Boat Airdopes 441. These earbuds come with a sleek design and immersive sound, making them the perfect companion for your daily adventures.",
+      category: "Earbuds"
+    },
+    {
+      id: "56",
+      name: "Nikon D850",
+      company: "Nikon",
       price: 299900,
       colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4,
-      reviews:30,
-      image:[
+      stock: 12,
+      rating: 4.8,
+      reviews: 20,
+      image: [
         {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/ktszgy80/speaker/mobile-tablet-speaker/b/u/m/stone-1200f-boat-original-imag72dhvchsxmrz.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/kwgpz0w0/speaker/i/l/u/-original-imag94zafybdhmwu.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/kwgpz0w0/speaker/f/n/t/-original-imag94za84hyjzrz.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/kwgpz0w0/speaker/z/r/r/-original-imag94zay6rkxake.jpeg?q=70",
-          filename:"forth"
-        },
-
+          id: 1,
+          img: "https://heyjimmy.in/wp-content/uploads/2022/08/Nikon-D850-DSLR-Camera-Body-Only-Online-Buy-Mumbai-India.jpg",
+          filename: "first"
+        }
       ],
-      description:
-        "It's time to enjoy a playback experience like never before courtesy boAt Stone 1200F 14W portable wireless speaker with RGB LEDs. The RGB LEDs pave the way for making the ambience suit a lot more to the music being played and set the right vibe! Its 14W thumping sound with passive bass radiator offers sheer musical bliss. It supports instant wireless connectivity with Bluetooth v5.0. Apart from the wireless connectivity, the user has other options in the form of AUX, USB and FM modes as well. The speaker pumps out nonstop audio for up to 9 hours on a single full charge w/o RGB LEDs and up to 7 hours with the RGB LEDs. It's a 360 degree cylindrical construct with IPX7 rated water resistance for a carefree listening time and carry strap for easy portability. The speaker also supports TWS feature meaning you can connect two Stone 1200Fs and forge them into one for a bigger impact. ",
-      category: "accessories",
-      
-    },{
-      id: "72",
-      name: "Google Nest Mini",
-      company: "speaker",
-      price: 224900,
-      colors: ["#ff0000", "#000000", "#CDD0D0"],
-      stock:10,
-      stars:4.4,
-      reviews:30,
-      image:[
-        {
-          id:1,
-          img:"https://rukminim2.flixcart.com/image/416/416/k33c4nk0/smart-assistant/a/j/k/nest-mini-ga00781-in-google-original-imafmauqguud8wsz.jpeg?q=70",
-          filename:"first"
-        },
-        {
-          id:2,
-          img:"https://rukminim2.flixcart.com/image/416/416/k9yjb0w0/smart-assistant/a/j/k/nest-mini-2nd-gen-ga00781-in-google-original-imafrmpa9hhzhhha.jpeg?q=70",
-          filename:"second"
-        },
-        {
-          id:3,
-          img:"https://rukminim2.flixcart.com/image/416/416/k33c4nk0/smart-assistant/a/j/k/nest-mini-ga00781-in-google-original-imafmauqayryzvws.jpeg?q=70",
-          filename:"third"
-        },
-        {
-          id:4,
-          img:"https://rukminim2.flixcart.com/image/416/416/k33c4nk0/smart-assistant/a/j/k/nest-mini-ga00781-in-google-original-imafmauqyh6bhprg.jpeg?q=70",
-          filename:"forth"
-        },
-
-      ],
-      description:
-        "Right from when you wake up till when you go to bed, the Google Nest Mini acts as your personal assistant keeping you informed and entertained throughout the day. Apart from providing you with your personalised schedule and reminders and giving weather updates to letting you play your favourite songs on various streaming services, the Nest Mini is here to make your day better!You can now control the 2nd generation Nest Mini with just your voice. All you have to do is say “Ok Google” to play songs, get weather updates, news, and almost anything, and all these in Hindi too. Apart from hearing your personalized schedule, commute, and reminders, you can also set timers and alarms, and control your compatible smart devices.",
-      category: "accessories", 
-      
-     
+      description: "Capture moments in stunning detail with the Nikon D850. This professional-grade DSLR camera features a high-resolution sensor and advanced autofocus system for unparalleled image quality.",
+      category: "Camera"
     },
+    {
+      id: "57",
+      name: "Canon EOS R5",
+      company: "Canon",
+      price: 349900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 18,
+      rating: 4.6,
+      reviews: 16,
+      image: [
+        {
+          id: 1,
+          img: "https://rukminim1.flixcart.com/image/850/1000/xif0q/dslr-camera/w/t/u/eos-r5-512gb-45-r5-canon-original-imagkk3amwkfyutg.jpeg?q=20",
+          filename: "first"
+        }
+      ],
+      description: "Experience the next level of imaging with the Canon EOS R5. This mirrorless camera combines high-resolution stills with 8K video recording, making it a versatile choice for photographers and videographers alike.",
+      category: "Camera"
+    },
+    {
+      id: "58",
+      name: "Sony Alpha A7 III",
+      company: "Sony",
+      price: 249900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 15,
+      rating: 4.7,
+      reviews: 14,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/517CEyCXIHL._AC_UF1000,1000_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Unleash your creativity with the Sony Alpha A7 III. This full-frame mirrorless camera features advanced autofocus and impressive low-light performance, making it a favorite among photographers.",
+      category: "Camera"
+    },
+    {
+      id: "59",
+      name: "Fujifilm X-T4",
+      company: "Fujifilm",
+      price: 219900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 20,
+      rating: 4.4,
+      reviews: 14,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/91L2tiLsIJL.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Elevate your photography with the Fujifilm X-T4. This mirrorless camera combines cutting-edge technology with a retro design, providing a unique shooting experience for photographers.",
+      category: "Camera"
+    },
+    {
+      id: "60",
+      name: "Panasonic Lumix GH5",
+      company: "Panasonic",
+      price: 199900,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 22,
+      rating: 4.5,
+      reviews: 12,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/I/71pSSZ58r0L.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Shoot cinematic videos and high-quality stills with the Panasonic Lumix GH5. This mirrorless camera is designed for content creators and offers advanced video features, making it a versatile tool for filmmakers.",
+      category: "Camera"
+    }
+  ,
+  
+    {
+      id: "61",
+      name: "Boat Stone 1200",
+      company: "Boat",
+      price: 4999,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 25,
+      rating: 4.5,
+      reviews: 10,
+      image: [
+        {
+          id: 1,
+          img: "https://i.gadgets360cdn.com/products/large/boAt-stone-1200-black-720x-800x898-1612031976.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Experience powerful sound with the Boat Stone 1200. This Bluetooth speaker delivers deep bass and clear vocals, making it perfect for parties and outdoor adventures.",
+      category: "Speaker"
+    },
+    {
+      id: "62",
+      name: "Boult Audio BassBox Blast",
+      company: "Boult",
+      price: 3499,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 20,
+      rating: 4.2,
+      reviews: 8,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/61HmOvijaZL._AC_UF350,350_QL80_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Immerse yourself in a musical journey with the Boult Audio BassBox Blast. This portable speaker features deep bass and a stylish design, making it a perfect companion for music enthusiasts.",
+      category: "Speaker"
+    },
+    {
+      id: "63",
+      name: "JBL Flip 5",
+      company: "JBL",
+      price: 8999,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 18,
+      rating: 4.7,
+      reviews: 12,
+      image: [
+        {
+          id: 1,
+          img: "https://in.jbl.com/dw/image/v2/BFND_PRD/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw01fbd907/JBL_Flip5_Product%20Photo_Side_MidnightBlack-1605x1605-DS3.png?sw=535&sh=535",
+          filename: "first"
+        }
+      ],
+      description: "Take your music anywhere with the JBL Flip 5. This portable Bluetooth speaker delivers powerful stereo sound and features a waterproof design, making it ideal for outdoor adventures.",
+      category: "Speaker"
+    },
+    {
+      id: "64",
+      name: "Sony SRS-XB33",
+      company: "Sony",
+      price: 12990,
+     colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 15,
+      rating: 4.4,
+      reviews: 14,
+      image: [
+        {
+          id: 1,
+          img: "data:image/jpeg;base64,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",
+          filename: "first"
+        }
+      ],
+      description: "Elevate your listening experience with the Sony SRS-XB33. This wireless speaker features Extra Bass for deep, punchy sound and vibrant LED lights for a party atmosphere.",
+      category: "Speaker"
+    },
+    {
+      id: "65",
+      name: "Portronics SoundDrum",
+      company: "Portronics",
+      price: 2499,
+      colors: ["#ff0000", "#000000", "#CDD0D0"],
+      stock: 22,
+      rating: 4.5,
+      reviews: 12,
+      image: [
+        {
+          id: 1,
+          img: "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51K+bJT1FmL._SY300_SX300_.jpg",
+          filename: "first"
+        }
+      ],
+      description: "Carry your music wherever you go with the Portronics SoundDrum. This compact Bluetooth speaker delivers crystal-clear sound and features a built-in FM radio, making it a versatile audio companion.",
+      category: "Speaker"
+    }
+  
     
     
     
