@@ -1,7 +1,9 @@
 const route = require('express').Router();
-
-const {product, singleProduct,categoryProduct,addNewProduct, companyProduct , addToCart , displayCart,closeProduct,setIncrease, setDecrease,newOrder,placeOrder} = require('../Controller/productController');
 const { register, loginUser } = require('../controller/loginSignup');
+const {product, singleProduct,categoryProduct,addNewProduct, companyProduct , addToCart , displayCart,closeProduct,setIncrease, setDecrease,newOrder,placeOrder} = require('../Controller/productController');
+
+
+
 
 route.get('/api/products' , product)
 route.get('/api/products/:id' , singleProduct)
