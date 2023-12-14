@@ -17,12 +17,16 @@ async function addNewProduct(req,res){
 const product =async (req , res)=>{
         try{
                 const data = await productSchema.find()
+                console.log(data); 
                    res.send(data)
              }
              catch(err){
                  res.send('error occured' , err)
              }
 }
+// const product=(req,res)=>{
+//     res.send(data)
+// }
 const singleProduct =async (req,res)=>{
         try{
                 const data = await productSchema.find({id:req.params.id})

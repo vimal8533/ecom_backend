@@ -37,7 +37,7 @@ async function login(req, res) {
         const login = await User.findOne({email:data.email})
         if (!login) {
             return res.send({ msg: "user not found" })
-        }
+        } 
         
         // compare the password from request and database
         if (await bcrypt.compare(data.password, login.password) == false) {
